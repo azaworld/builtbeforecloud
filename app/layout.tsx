@@ -40,9 +40,19 @@ export const metadata: Metadata = {
   description:
     "The firsthand, research-supported story of Timothy Munro Roberts (Tim Roberts)—from the Wacko Cracko Brothers and Whackoland BBS to Savvis, Intira’s NetSourcing model and Platformz, the enterprise operating infrastructure his entire life prepared him to build.",
   keywords: [
+    "Platformz",
+    "Platformz Tim Roberts",
+    "Platformz Timothy Munro Roberts",
+    "Platformz founder",
+    "Platformz DIaaS",
+    "Platformz enterprise operating system",
+    "Platformz Distribution Infrastructure as a Service",
+    "Platformz Looking Glass Control Tower",
+    "Platformz SaaS Foundry",
     "Timothy Munro Roberts",
     "Tim Roberts",
     "Timothy Roberts",
+    "timothymunroroberts.com",
     "Built Before Cloud",
     "Whackoland BBS",
     "W(hack)o Cracko Brothers",
@@ -50,12 +60,13 @@ export const metadata: Metadata = {
     "DiamondNet",
     "Intira",
     "NetSourcing",
-    "Platformz",
     "DIaaS",
     "Looking Glass Control Tower",
     "SaaS Foundry",
     "FUR4",
     "cloud computing history",
+    "AI data center",
+    "HashingSpace",
     "St. Louis BBS",
     "Phrack",
   ],
@@ -75,19 +86,55 @@ export const metadata: Metadata = {
 const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://builtbeforecloud.com/about-tim#person",
   name: "Timothy Munro Roberts",
   alternateName: ["Tim Roberts", "Timothy Roberts"],
   url: "https://builtbeforecloud.com/about-tim",
+  jobTitle: "Founder, Platformz",
+  worksFor: {
+    "@type": "Organization",
+    "@id": "https://builtbeforecloud.com/platformz#organization",
+    name: "Platformz",
+  },
   description:
-    "Technology founder: Whackoland BBS, co-founder of Savvis and Intira (NetSourcing), and founder of Platformz, the enterprise operating foundation.",
+    "Technology founder: Whackoland BBS, co-founder of Savvis and Intira (NetSourcing), designer of high-density data centers before the AI-data-center category existed, and founder of Platformz, the enterprise operating foundation.",
   knowsAbout: [
+    "Platformz",
     "cloud computing",
     "network infrastructure",
     "managed hosting",
+    "data center design",
+    "AI data centers",
     "enterprise software",
     "digital distribution",
   ],
-  sameAs: ["https://platformz.us/"],
+  sameAs: [
+    "https://platformz.us/",
+    "https://timothymunroroberts.com/",
+    "https://www.youtube.com/watch?v=0LDF9qTTie4",
+    "https://www.youtube.com/watch?v=Uu3Cwb14gn8",
+  ],
+};
+
+const platformzOrgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://builtbeforecloud.com/platformz#organization",
+  name: "Platformz",
+  url: "https://platformz.us/",
+  description:
+    "Platformz is the reusable enterprise operating foundation founded by Timothy Munro Roberts (Tim Roberts). Its flagship product is DIaaS (Distribution Infrastructure as a Service), with the Looking Glass Control Tower as its executive command layer and the SaaS Foundry for client-owned software.",
+  founder: {
+    "@type": "Person",
+    "@id": "https://builtbeforecloud.com/about-tim#person",
+    name: "Timothy Munro Roberts",
+    alternateName: ["Tim Roberts", "Timothy Roberts"],
+    url: "https://timothymunroroberts.com/",
+  },
+  sameAs: [
+    "https://builtbeforecloud.com/platformz",
+    "https://timothymunroroberts.com/",
+  ],
 };
 
 const websiteJsonLd = {
@@ -97,7 +144,11 @@ const websiteJsonLd = {
   url: "https://builtbeforecloud.com",
   description:
     "The firsthand, research-supported story of Timothy Munro Roberts (Tim Roberts)—from Whackoland BBS to Savvis, Intira and Platformz.",
-  author: { "@type": "Person", name: "Timothy Munro Roberts" },
+  author: {
+    "@type": "Person",
+    "@id": "https://builtbeforecloud.com/about-tim#person",
+    name: "Timothy Munro Roberts",
+  },
 };
 
 export default function RootLayout({
@@ -111,6 +162,12 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(platformzOrgJsonLd),
+          }}
         />
         <script
           type="application/ld+json"

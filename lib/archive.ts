@@ -133,13 +133,13 @@ export const archiveItems: ArchiveItem[] = [
   },
   {
     slug: "intira-datacenter-presentation",
-    title: "Founder-Supplied Data-Center Presentation (Video)",
-    era: "Late 1990s–2000s",
+    title: "Founder-Supplied Data-Center Presentations (Video)",
+    era: "2015",
     category: "Intira",
     description:
-      "The original founder-supplied data-center presentation supporting the seven-times electrical and cooling design account. It is to be preserved alongside the original drawings, engineering plans, equipment schedules and construction records as part of the historical archive.",
-    status: "seeking",
-    claim: "founder-recollection",
+      "Two surviving video records of Tim's high-density design philosophy: the Fortress One data-center tour (hydroelectric power, seven times the electric and cooling capacity of traditional facilities, 1,500 racks, up to 30 kW per rack) embedded in the Intira chapter, and the CryptoHash One Tier 1 Bitcoin facility (in-row cooling, 5 megawatts) embedded in the Missing Pieces chapter. Original drawings, engineering plans, equipment schedules and construction records are still being assembled.",
+    status: "archived",
+    claim: "corroborated-recollection",
   },
   {
     slug: "dovebid-netsourcing-agreement",

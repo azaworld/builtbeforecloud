@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ChapterHero from "@/components/ChapterHero";
 import Prose from "@/components/Prose";
 import FounderQuote from "@/components/FounderQuote";
 import ClaimLabel from "@/components/ClaimLabel";
+import VideoFigure from "@/components/VideoFigure";
 import ChapterEndCTA from "@/components/ChapterEndCTA";
 
 export const metadata: Metadata = {
@@ -28,9 +30,28 @@ const contributions = [
   ["Failure", "contributed controls."],
 ];
 
+const cryptoHashOneVideoJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "CryptoHash One (Planned)",
+  description:
+    "Founder-supplied presentation of CryptoHash One, a Tier 1 Bitcoin data center with in-row cooling and 5 megawatts of power, designed by Timothy Munro Roberts (Tim Roberts), founder of Platformz—AI-class compute density before AI was a thing.",
+  embedUrl: "https://www.youtube-nocookie.com/embed/Uu3Cwb14gn8",
+  contentUrl: "https://www.youtube.com/watch?v=Uu3Cwb14gn8",
+  thumbnailUrl: "https://i.ytimg.com/vi/Uu3Cwb14gn8/hqdefault.jpg",
+  uploadDate: "2015-08-27",
+  duration: "PT1M16S",
+};
+
 export default function MissingPiecesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(cryptoHashOneVideoJsonLd),
+        }}
+      />
       <ChapterHero
         eyebrow="Chapter Three"
         ghost="03"
@@ -276,6 +297,38 @@ export default function MissingPiecesPage() {
           unrealistic expectations. The technology thesis and the company
           economics must both work.”
         </FounderQuote>
+
+        <p>
+          The HashingSpace era also produced the clearest surviving video
+          record of the high-density design philosophy that began at Intira.
+        </p>
+
+        <VideoFigure
+          videoId="Uu3Cwb14gn8"
+          title="CryptoHash One — Tier 1 Bitcoin data center with in-row cooling and 5 megawatts of power"
+          caption={
+            <>
+              <strong>CryptoHash One (planned, 2015).</strong> The smaller
+              crypto facility: a Tier 1 Bitcoin data center with in-row
+              cooling, a cooling-with-heat SLA and 5 megawatts of power. This
+              was AI-class density before AI was a thing—designed for the
+              sustained, concentrated compute loads that the AI-data-center
+              industry now treats as standard.
+            </>
+          }
+          credit="Founder-supplied video record"
+          claim="corroborated-recollection"
+        />
+
+        <p>
+          The larger companion design—Fortress One, with seven times the
+          electrical and cooling capacity of traditional facilities and
+          sustainable hydroelectric power—is preserved in the{" "}
+          <Link href="/intira" className="text-electric-cyan hover:underline">
+            Intira chapter
+          </Link>{" "}
+          beside the seven-times design account it corroborates.
+        </p>
 
         <h2>Failure Was Also Infrastructure</h2>
         <p>Every successful company contributed reusable ideas.</p>

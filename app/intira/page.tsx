@@ -3,6 +3,7 @@ import ChapterHero from "@/components/ChapterHero";
 import Prose from "@/components/Prose";
 import FounderQuote from "@/components/FounderQuote";
 import ClaimLabel from "@/components/ClaimLabel";
+import VideoFigure from "@/components/VideoFigure";
 import ChapterEndCTA from "@/components/ChapterEndCTA";
 
 export const metadata: Metadata = {
@@ -64,9 +65,28 @@ const powerChain = [
   "Expansion capacity",
 ];
 
+const fortressOneVideoJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "HashingSpace Fortress One Data Center Tour",
+  description:
+    "Founder-supplied presentation of the Fortress One data center designed by Timothy Munro Roberts (Tim Roberts), founder of Platformz: sustainable hydroelectric power and seven times the electric and cooling capacity of traditional facilities, built for high-density crypto and AI-class hosting before the AI-data-center category existed.",
+  embedUrl: "https://www.youtube-nocookie.com/embed/0LDF9qTTie4",
+  contentUrl: "https://www.youtube.com/watch?v=0LDF9qTTie4",
+  thumbnailUrl: "https://i.ytimg.com/vi/0LDF9qTTie4/hqdefault.jpg",
+  uploadDate: "2015-08-04",
+  duration: "PT2M14S",
+};
+
 export default function IntiraPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(fortressOneVideoJsonLd),
+        }}
+      />
       <ChapterHero
         eyebrow="Chapter Two"
         ghost="02"
@@ -506,16 +526,35 @@ export default function IntiraPage() {
             Evidence: Founder Recollection and Founder-Supplied Video Record
           </p>
           <p className="mt-3 text-sm leading-relaxed text-technical-gray">
-            The original founder-supplied data-center presentation should be
-            preserved alongside the original drawings, engineering plans,
-            equipment schedules and construction records as part of the
-            historical archive. See the{" "}
+            The founder-supplied data-center presentation below is preserved
+            alongside the historical record, and should eventually sit beside
+            the original drawings, engineering plans, equipment schedules and
+            construction records in the{" "}
             <a href="/archive" className="text-electric-cyan hover:underline">
               Built Before Cloud Archive
             </a>
             .
           </p>
         </div>
+
+        <VideoFigure
+          videoId="0LDF9qTTie4"
+          title="Fortress One Data Center Tour — seven times the power and cooling of traditional facilities"
+          caption={
+            <>
+              <strong>Watch the founder-supplied data-center presentation.</strong>{" "}
+              Tim’s Fortress One design (Washington State, planned 2015–2016):
+              a facility powered by sustainable hydroelectric power with{" "}
+              <em>seven times the electric and cooling capacity of traditional
+              facilities</em>—109,000 square feet of data-center floor, 1,500
+              rack cabinets, up to 30&nbsp;kW per rack, N+1 power and 12,000
+              tons of cooling. Designed for high-density crypto and AI-class
+              hosting years before “AI data center” became a commercial term.
+            </>
+          }
+          credit="Founder-supplied video record"
+          claim="corroborated-recollection"
+        />
 
         <h2>Why the AI Comparison Matters</h2>
         <p>

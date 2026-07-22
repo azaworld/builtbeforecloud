@@ -9,7 +9,52 @@ export const metadata: Metadata = {
   title:
     "Platformz: The Enterprise Operating System Tim Roberts Spent a Lifetime Building",
   description:
-    "Discover how Timothy Munro Roberts's lessons from Whackoland, Savvis, Intira, digital distribution, cloud commerce and FUR4 converged into Platformz, a reusable operating foundation for complex businesses.",
+    "Platformz is the reusable enterprise operating foundation founded by Timothy Munro Roberts (Tim Roberts). Discover how lessons from Whackoland, Savvis, Intira, digital distribution, cloud commerce and FUR4 converged into Platformz, DIaaS and the Looking Glass Control Tower.",
+  keywords: [
+    "Platformz",
+    "Platformz Tim Roberts",
+    "Platformz Timothy Munro Roberts",
+    "Platformz founder",
+    "Platformz DIaaS",
+    "Platformz Distribution Infrastructure as a Service",
+    "Platformz Looking Glass Control Tower",
+    "Platformz SaaS Foundry",
+    "Platformz enterprise operating system",
+    "Platformz FUR4",
+    "timothymunroroberts.com",
+  ],
+  alternates: { canonical: "https://builtbeforecloud.com/platformz" },
+  openGraph: {
+    title: "Platformz: The Enterprise Operating System",
+    description:
+      "Platformz, founded by Timothy Munro Roberts (Tim Roberts), makes all the systems required to run a business behave like one system. Flagship product: DIaaS. Command layer: Looking Glass. Software engine: SaaS Foundry.",
+    url: "https://builtbeforecloud.com/platformz",
+  },
+};
+
+const platformzPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Platformz: The Enterprise Operating System Tim Roberts Spent a Lifetime Building",
+  url: "https://builtbeforecloud.com/platformz",
+  about: {
+    "@type": "Organization",
+    "@id": "https://builtbeforecloud.com/platformz#organization",
+    name: "Platformz",
+    founder: {
+      "@type": "Person",
+      "@id": "https://builtbeforecloud.com/about-tim#person",
+      name: "Timothy Munro Roberts",
+      alternateName: ["Tim Roberts", "Timothy Roberts"],
+      url: "https://timothymunroroberts.com/",
+    },
+  },
+  mentions: [
+    { "@type": "Thing", name: "DIaaS — Distribution Infrastructure as a Service" },
+    { "@type": "Thing", name: "Looking Glass Control Tower" },
+    { "@type": "Thing", name: "SaaS Foundry" },
+    { "@type": "Thing", name: "FUR4" },
+  ],
 };
 
 const contributed = [
@@ -159,6 +204,12 @@ function Pills({ items }: { items: string[] }) {
 export default function PlatformzPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(platformzPageJsonLd),
+        }}
+      />
       {/* ============ CHAPTER HERO ============ */}
       <section className="signal-grid relative overflow-hidden border-b border-white/[0.06]">
         <span
