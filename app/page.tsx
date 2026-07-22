@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import CTAButton from "@/components/CTAButton";
 import TerminalBlock from "@/components/TerminalBlock";
@@ -125,12 +126,36 @@ export default function HomePage() {
             </span>
           </h1>
 
+          <p className="rv mx-auto mt-8 max-w-3xl text-center font-headline text-[clamp(1.05rem,2.2vw,1.5rem)] font-semibold leading-snug tracking-[-0.01em] text-warm-copper">
+            Before AI Data Centers Became the Next Global Infrastructure Race.
+          </p>
+
           <span aria-hidden className="hairline mx-auto mt-14 block w-48" />
 
           <div className="rv-children mx-auto mt-14 max-w-2xl space-y-4 text-lg leading-[1.8] text-archive-paper/95">
             <p className="first-letter:float-left first-letter:mr-3 first-letter:font-serif first-letter:text-[3.4rem] first-letter:leading-[0.85] first-letter:text-electric-cyan">
               My name is Timothy Munro Roberts.
             </p>
+          </div>
+
+          <div className="rv mx-auto mt-12 max-w-xs">
+            <div className="panel overflow-hidden">
+              <Image
+                src="/images/tim-roberts.jpg"
+                alt="Timothy Munro Roberts"
+                width={900}
+                height={1200}
+                priority
+                className="h-auto w-full"
+                sizes="320px"
+              />
+              <p className="border-t border-white/[0.06] px-4 py-3 text-center font-mono text-[10px] uppercase tracking-[0.22em] text-technical-gray">
+                Timothy Munro Roberts
+              </p>
+            </div>
+          </div>
+
+          <div className="rv-children mx-auto mt-12 max-w-2xl space-y-4 text-lg leading-[1.8] text-archive-paper/95">
             <p>
               My technology story did not begin in Silicon Valley, inside a
               venture-capital firm or at a famous university.
@@ -150,19 +175,21 @@ export default function HomePage() {
           <div className="rv-children mx-auto max-w-2xl space-y-4 text-lg leading-[1.8] text-archive-paper/95">
             <p>There was no public World Wide Web.</p>
             <p>
-              There was no Google, YouTube, Reddit, Discord, Facebook, AWS or
-              Azure.
+              There was no Google, YouTube, Reddit, Discord, Facebook, AWS,
+              Azure or ChatGPT.
             </p>
             <p className="font-headline font-semibold text-archive-paper">
               There were computers.
               <br />
-              There were modems.
-              <br />
               There were telephone lines.
             </p>
             <p>
-              And there were two fourteen-year-old twins determined to discover
-              what was waiting on the other end.
+              There were modems that screamed, clicked and hissed until two
+              distant machines finally agreed to communicate.
+            </p>
+            <p>
+              And there were two fourteen-year-old identical twins determined
+              to discover what was waiting on the other end.
             </p>
             <p>
               Peter and I wrote software, exchanged games and technical
@@ -200,8 +227,48 @@ export default function HomePage() {
               and into the data center. Instead of forcing every company to
               assemble buildings, power, cooling, circuits, servers, storage,
               databases, firewalls, backups and specialized operating teams,
-              Intira offered to build and manage the environment beneath the
-              application.
+              Intira offered to build and operate the complete environment
+              beneath the application.
+            </p>
+            <p>We called that model:</p>
+            <p className="font-headline text-2xl font-bold tracking-tight text-electric-cyan">
+              NetSourcing
+            </p>
+            <p>
+              Today, much of the industry would recognize it as an early
+              commercial precursor to managed cloud infrastructure.
+            </p>
+            <p>
+              Inside Intira, we were also designing facilities for computing
+              densities far beyond the conventional data centers of the
+              period. My design called for approximately seven times the
+              electrical and cooling capacity of the legacy environments we
+              were comparing ourselves with.
+            </p>
+            <p>
+              We were not training modern large language models, and the term
+              AI data center did not yet exist in its current commercial
+              meaning.
+            </p>
+            <p>
+              But we were already confronting the physical problem now
+              reshaping the AI infrastructure industry:
+            </p>
+            <p className="border-l-2 border-warm-copper/60 py-1 pl-5 font-headline font-semibold leading-[1.7] text-archive-paper">
+              More computing in less space.
+              <br />
+              More electrical demand.
+              <br />
+              More heat.
+              <br />
+              More continuous utilization.
+              <br />
+              More network capacity.
+              <br />
+              More centralized management.
+              <br />
+              More pressure to design the building, power, cooling, computing
+              and software as one coordinated system.
             </p>
             <p className="border-l-2 border-electric-cyan/60 py-1 pl-5 font-headline text-xl font-semibold text-electric-cyan">
               Savvis helped improve the road.
@@ -210,13 +277,13 @@ export default function HomePage() {
             </p>
             <p>
               Every company after that taught me another part of the
-              distribution problem.
+              distribution and infrastructure problem.
             </p>
             <p>
-              Today, those pieces have come together in Platformz—a reusable
-              operating foundation designed to connect the systems, people,
-              partners, workflows and intelligence required to operate a
-              complex modern business.
+              Today, all those pieces have come together in Platformz—a
+              reusable operating foundation designed to connect the systems,
+              people, partners, workflows, data and intelligence required to
+              operate a complex modern business.
             </p>
             <p>Platformz is not simply my newest company.</p>
             <p className="font-headline text-2xl font-semibold leading-snug text-archive-paper">
@@ -376,8 +443,19 @@ export default function HomePage() {
             <br />
             One network led to managed cloud infrastructure.
             <br />
+            High-density computing led to data centers designed beyond the
+            limits of their time.
+            <br />
             <span className="text-archive-paper">
               A lifetime of infrastructure led to Platformz.
+            </span>
+          </p>
+
+          <p className="rv mt-10 font-headline text-lg font-semibold leading-relaxed text-archive-paper">
+            The cloud was built layer by layer.
+            <br />
+            <span className="headline-gradient">
+              Platformz is where the layers finally become one.
             </span>
           </p>
         </div>

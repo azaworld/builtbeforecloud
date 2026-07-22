@@ -18,7 +18,8 @@ const contributed = [
   ["J&G taught me integration.", "A business cannot operate efficiently when its systems cannot communicate."],
   ["Savvis taught me network orchestration.", "The complete route matters more than the advertised speed of one component."],
   ["Intira taught me managed infrastructure.", "Customers want outcomes, not a collection of boxes they must operate themselves."],
-  ["Later ventures taught me digital distribution.", "One reusable infrastructure can power many products, brands, customers and business models."],
+  ["The data centers taught me full-stack design.", "The building, power, cooling, computing, networking, software and operations have to be designed as one system."],
+  ["Later ventures taught me distribution.", "One reusable foundation can power many products, brands, customers and business models."],
   ["Failure taught me discipline.", "Architecture alone does not create a durable company. Governance, focus, economics, capital structure and execution matter just as much."],
   ["FUR4 taught me the modern operating problem.", "The enterprise is now surrounded by specialized software, service providers, marketplaces, fulfillment centers, tax systems, product platforms and data silos. The systems may be individually capable. The business remains fragmented."],
 ];
@@ -43,8 +44,8 @@ const notList = [
 const diaasScope = [
   "Commerce", "Marketplaces", "Retailers", "Dealers", "Partners", "Catalog",
   "Inventory", "Orders", "Fulfillment", "Freight", "Tax", "Payments",
-  "Customer service", "Referral programs", "Data", "Automation",
-  "Executive visibility",
+  "Customer service", "Referral programs", "Creators", "Data",
+  "Automation", "Executive visibility",
 ];
 
 const architectureLayers = [
@@ -54,8 +55,9 @@ const architectureLayers = [
     lede: "The interfaces used by different people:",
     items: [
       "Customer portals", "Dealer portals", "Wholesale portals",
-      "Retailer portals", "Vendor portals", "Referral portals",
-      "Creator portals", "Employee portals", "Executive portals",
+      "Retailer portals", "Veterinary portals", "Professional portals",
+      "Vendor portals", "Referral portals", "Creator portals",
+      "Employee portals", "Executive portals",
       "Administrative environments",
     ],
   },
@@ -189,6 +191,7 @@ export default function PlatformzPage() {
           <li>A BBS.</li>
           <li>An Internet backbone.</li>
           <li>A cloud-infrastructure provider.</li>
+          <li>High-density data centers.</li>
           <li>A game console.</li>
           <li>A digital distribution network.</li>
           <li>A commerce platform.</li>
@@ -397,6 +400,52 @@ export default function PlatformzPage() {
           should be taken.”
         </FounderQuote>
 
+        {/* ============ AI-READY TO AI-POWERED ============ */}
+        <h2>From the AI-Ready Data Center to the AI-Powered Business</h2>
+        <p>
+          Modern AI infrastructure brings power, cooling, computing,
+          networking, storage, software and operations together as one
+          coordinated production system.
+        </p>
+        <p>
+          Platformz applies the same architectural principle to the
+          enterprise.
+        </p>
+        <p>The materials are different.</p>
+        <p>The logic is the same.</p>
+        <p>
+          At Intira, the facility could not be separated from the computing
+          environment.
+        </p>
+        <p>
+          At Platformz, the business systems cannot be separated from the
+          workflows and operating decisions they support.
+        </p>
+
+        <FounderQuote heading="Founder statement">
+          “At Intira, I designed the building, power, cooling, network,
+          computing and operations as one environment. At Platformz, I am
+          designing the applications, partners, data, workflows, integrations
+          and AI as one operating environment. The materials are different.
+          The architectural principle is the same.”
+        </FounderQuote>
+
+        <p>The AI data center produces computing intelligence.</p>
+        <p>
+          Platformz is intended to turn that intelligence into operating
+          intelligence.
+        </p>
+        <ul>
+          <li>Which orders are at risk?</li>
+          <li>Which customers are affected?</li>
+          <li>Which inventory is unavailable?</li>
+          <li>Which channel is failing?</li>
+          <li>Which supplier is late?</li>
+          <li>Which technical problem is reducing revenue?</li>
+          <li>Which financial result is changing?</li>
+          <li>Which action should leadership take?</li>
+        </ul>
+
         {/* ============ CLIENT-OWNED SAAS ============ */}
         <h2>Client-Owned SaaS</h2>
         <p>
@@ -546,6 +595,10 @@ export default function PlatformzPage() {
           At Intira, I helped build environments that operated the
           infrastructure beneath enterprise applications.
         </p>
+        <p>
+          I designed data centers around the future density of computing
+          before the AI-data-center category existed.
+        </p>
         <p>In every company afterward, I added another piece:</p>
         <p className="font-mono text-sm leading-loose text-technical-gray">
           Digital distribution.
@@ -577,12 +630,17 @@ export default function PlatformzPage() {
           “Platformz is the first time all the pieces have existed in one
           place. It combines my father’s belief in thinking at scale, the
           platform lessons of Whackoland, the integration work I learned at
-          J&amp;G, the network intelligence of Savvis, the managed-infrastructure
-          model of Intira and every distribution lesson that followed. My
-          entire life was not a straight line. But every turn contributed
+          J&amp;G, the network intelligence of Savvis, the
+          managed-infrastructure and high-density facility model of Intira,
+          and every distribution lesson that followed. My life was not a
+          straight line. But every turn contributed
           something Platformz needed. This is the platform I have been trying
           to build all along.”
         </FounderQuote>
+
+        <p className="text-center font-headline text-2xl font-bold text-electric-cyan">
+          Everything Connects Here.
+        </p>
       </Prose>
 
       {/* ============ FINAL CTA ============ */}

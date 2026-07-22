@@ -12,8 +12,8 @@ export default function ContributePage() {
   return (
     <>
       <ChapterHero
-        eyebrow="Contribute"
-        title="Help Build the Archive"
+        eyebrow="Help Complete the Record"
+        title="Were You There?"
         subtitle={
           <p>
             This is an oral-history and evidence project. Firsthand accounts
@@ -23,6 +23,52 @@ export default function ContributePage() {
       />
 
       <Prose>
+        <p>
+          Did you work at Whackoland, Metal Shop, DiamondNet, Savvis, Digital
+          Broadcast Network, Intira or Platformz?
+        </p>
+        <p>
+          Were you a customer, investor, vendor, journalist, adviser,
+          engineer, construction professional, family member or technology
+          partner?
+        </p>
+        <p>Do you have:</p>
+        <div className="my-8 flex flex-wrap gap-2">
+          {[
+            "Photographs",
+            "Emails",
+            "Network maps",
+            "Contracts",
+            "Customer proposals",
+            "Equipment lists",
+            "Press kits",
+            "Investor presentations",
+            "Facility plans",
+            "Electrical drawings",
+            "Cooling calculations",
+            "Blade-server invoices",
+            "Virtualization licenses",
+            "Software",
+            "Company merchandise",
+            "Personal recollections",
+            "Corrections we may not enjoy reading",
+          ].map((item) => (
+            <span
+              key={item}
+              className="rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-1.5 font-mono text-xs text-technical-gray transition-colors hover:border-electric-cyan/50 hover:text-electric-cyan"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+        <p className="font-headline text-lg font-semibold leading-relaxed text-archive-paper">
+          We want to hear from you.
+          <br />
+          You do not have to agree with me.
+          <br />
+          You do have to help us understand what happened.
+        </p>
+
         <h2>What We Are Looking For</h2>
         <ul>
           <li>

@@ -12,23 +12,53 @@ export default function CorrectionsPage() {
   return (
     <>
       <ChapterHero
-        eyebrow="Corrections"
-        title="Getting the History Right"
+        eyebrow="Corrections and Historical Updates"
+        title="Think We Got Something Wrong?"
         subtitle={
-          <p>
-            This is a living historical project. When the record improves, the
-            site improves.
+          <p className="font-headline text-xl font-semibold text-electric-cyan">
+            Good. Tell us.
           </p>
         }
       />
 
       <Prose>
+        <p>Built Before Cloud is a living historical project.</p>
+        <p>A new contract may change a date.</p>
+        <p>A former employee may remember a decision differently.</p>
+        <p>A photograph may establish who was in the room.</p>
+        <p>
+          A court record may contradict a story repeated for decades.
+        </p>
+        <p>
+          A construction drawing may prove—or disprove—the seven-times power
+          and cooling design.
+        </p>
+        <p>
+          A hardware invoice may establish when Intira began using blade
+          servers or virtualization.
+        </p>
+
         <h2>Our Commitment</h2>
         <p>
           Built Before Cloud labels every major historical claim by evidence
           classification. When new documents, participant accounts or
           contemporaneous records change what we can support, we update the
           text and the label, and note the change.
+        </p>
+        <p>Material corrections will not be silently erased.</p>
+        <p>Each major update will show:</p>
+        <ul>
+          <li>The original wording.</li>
+          <li>The revised wording.</li>
+          <li>The reason for the change.</li>
+          <li>The supporting evidence.</li>
+          <li>The date.</li>
+          <li>The pages affected.</li>
+        </ul>
+        <p className="font-headline text-lg font-semibold leading-relaxed text-archive-paper">
+          Strong history is not history that avoids challenges.
+          <br />
+          It is history that survives them.
         </p>
 
         <h2>Permanent Right of Response</h2>

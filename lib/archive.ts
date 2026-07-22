@@ -12,6 +12,16 @@ export type ArchiveItem = {
 
 export const archiveItems: ArchiveItem[] = [
   {
+    slug: "monty-roberts-family-archive",
+    title: "The Monty Roberts Family Archive",
+    era: "1960s–1980s",
+    category: "Family & Origin",
+    description:
+      "Surviving artifacts from William Munro 'Monty' Roberts III's career: the Up, Down & Strange marketing sheet, photographs with August Busch III and Yvonne Elliman, the Mercury racing message from his Lincoln-Mercury years, Ontario Motor Speedway photographs and the signed Busch Racing 1980 media guide.",
+    status: "archived",
+    claim: "family-record",
+  },
+  {
     slug: "whackoland-login-screen",
     title: "Whackoland BBS Login Screen (Reconstruction)",
     era: "1980s",
@@ -23,11 +33,31 @@ export const archiveItems: ArchiveItem[] = [
   },
   {
     slug: "phrack-launch-1985",
-    title: "Phrack Launches (1985)",
+    title: "Phrack Launches From Metal Shop (November 17, 1985)",
     era: "1985",
     category: "BBS Era",
     description:
-      "Phrack launched in 1985 out of the St. Louis modem community that included Metal Shop BBS and Whackoland. The electronic magazine's early issues remain publicly archived.",
+      "The first issue of Phrack, released under editor Taran King and distributed as electronic files from Metal Shop BBS in St. Louis. Phrack described itself as a collection of electronic files, encouraged redistribution by other bulletin boards and invited future submissions. It is still publishing four decades later.",
+    status: "archived",
+    claim: "contemporary-reporting",
+  },
+  {
+    slug: "whackoland-phrack-1986",
+    title: "Whackoland Documented in Phrack (February 1986)",
+    era: "1986",
+    category: "BBS Era",
+    description:
+      "The February 1986 Phrack entry documenting Whackoland as a 300/1200-baud BBS operated by the W(hack)o Cracko Brothers, with 40 megabytes of storage, customized features, private sections and an intentionally exclusive limit of 100 users. The same report includes a colorful, partly unverified account of the twins attracting law-enforcement attention.",
+    status: "archived",
+    claim: "contemporary-reporting",
+  },
+  {
+    slug: "tap-revival-proposal-1986",
+    title: "The Proposed TAP Revival (March 1986)",
+    era: "1986",
+    category: "BBS Era",
+    description:
+      "The March 1986 Phrack report on plans for the W(hack)o Cracko Brothers to take over or restart TAP—listing proposed regional editors, staff, subscription rates, online access and a monthly 30-to-40-page color magazine—while openly questioning whether Cheshire Catalyst had formally transferred the name.",
     status: "archived",
     claim: "contemporary-reporting",
   },
@@ -52,12 +82,22 @@ export const archiveItems: ArchiveItem[] = [
     claim: "founder-recollection",
   },
   {
-    slug: "savvis-bridge-ipo",
-    title: "Bridge Information Systems and the Savvis IPO",
-    era: "Late 1990s–2000s",
+    slug: "boardwatch-july-1997",
+    title: "Boardwatch Internet Service Providers Directory (July/August 1997)",
+    era: "1997",
     category: "Savvis",
     description:
-      "After Tim's departure, Bridge Information Systems acquired control of Savvis. The company later completed a public offering and expanded into managed hosting, colocation and cloud services.",
+      "The Boardwatch Magazine bimonthly directory advertising performance tests for Internet backbone providers. The Keynote/Boardwatch measurement program produced the November 1997 result in which Savvis ranked first with a reported average download time of 4.905 seconds.",
+    status: "archived",
+    claim: "contemporary-reporting",
+  },
+  {
+    slug: "savvis-bridge-ipo",
+    title: "Bridge Information Systems and the Savvis IPO",
+    era: "1999–2000",
+    category: "Savvis",
+    description:
+      "Bridge Information Systems acquired Savvis in April 1999, combining its 18-city network with Bridge's global infrastructure into an 87-city IP and ATM network. On February 15, 2000, Savvis sold 17 million shares at $24, raising approximately $408 million at a reported market value of approximately $2.2 billion.",
     status: "archived",
     claim: "verified-public-record",
   },
@@ -87,9 +127,39 @@ export const archiveItems: ArchiveItem[] = [
     era: "Late 1990s–2000s",
     category: "Intira",
     description:
-      "The Intira story centers on facilities in St. Louis, Pleasanton (California) and New York City. Tim recalls hiring C. Rallo Construction and Ross & Baruzzini. Facility documentation is being assembled.",
+      "The Intira story centers on facilities in St. Louis, Pleasanton (California) and New York City. Tim recalls hiring C. Rallo Construction and Ross & Baruzzini. Electrical drawings, mechanical drawings and construction records documenting the approximately seven-times power and cooling design are being assembled.",
     status: "seeking",
     claim: "founder-recollection",
+  },
+  {
+    slug: "intira-datacenter-presentation",
+    title: "Founder-Supplied Data-Center Presentation (Video)",
+    era: "Late 1990s–2000s",
+    category: "Intira",
+    description:
+      "The original founder-supplied data-center presentation supporting the seven-times electrical and cooling design account. It is to be preserved alongside the original drawings, engineering plans, equipment schedules and construction records as part of the historical archive.",
+    status: "seeking",
+    claim: "founder-recollection",
+  },
+  {
+    slug: "dovebid-netsourcing-agreement",
+    title: "The DoveBid NetSourcing Agreement (September 2000)",
+    era: "2000",
+    category: "Intira",
+    description:
+      "A surviving September 2000 NetSourcing agreement with DoveBid providing contractual evidence of the model: Intira agreed to provide hosting, data management, Internet access, security and associated services around DoveBid's applications, while the customer retained ownership of the application.",
+    status: "archived",
+    claim: "verified-public-record",
+  },
+  {
+    slug: "intira-bankruptcy-divine-2001",
+    title: "Intira Bankruptcy and the divine Transaction (July 2001)",
+    era: "2001",
+    category: "Intira",
+    description:
+      "Public filings documenting divine's agreement to purchase substantially all Intira assets for $1 million in cash, provide a $6.8 million debtor-in-possession credit facility and assume certain obligations. Later asset lineage involving Data Return, Terremark and Verizon remains an open archival question.",
+    status: "archived",
+    claim: "verified-public-record",
   },
   {
     slug: "phantom-console-coverage",
