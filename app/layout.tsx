@@ -39,6 +39,15 @@ export const metadata: Metadata = {
   },
   description:
     "The firsthand, research-supported story of Timothy Roberts—from the Wacko Cracko Brothers and Whackoland BBS to Savvis, Intira’s NetSourcing model and Platformz, the enterprise operating infrastructure his entire life prepared him to build.",
+  openGraph: {
+    siteName: "Built Before Cloud",
+    type: "website",
+    locale: "en_US",
+    url: "https://builtbeforecloud.com",
+    title: "Tim Roberts: From Whackoland and Savvis to Intira and Platformz",
+    description:
+      "The firsthand, research-supported story of Timothy Roberts—from Whackoland BBS and the earliest digital communities to Savvis, Intira and Platformz, the enterprise operating infrastructure built from a lifetime of connecting people, systems and businesses.",
+  },
 };
 
 export default function RootLayout({

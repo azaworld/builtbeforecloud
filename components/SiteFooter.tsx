@@ -23,6 +23,14 @@ export default function SiteFooter() {
                 Built Before Cloud
               </span>
             </div>
+            {/* Supporting statement */}
+            <p className="mt-4 text-sm leading-relaxed text-archive-paper/80">
+              The firsthand, research-supported story of Timothy Roberts—from
+              Whackoland BBS and the earliest digital communities to Savvis,
+              Intira and Platformz, the enterprise operating infrastructure
+              built from a lifetime of connecting people, systems and
+              businesses.
+            </p>
             <p className="mt-4 text-sm leading-relaxed text-technical-gray">
               Built Before Cloud is an independent historical and educational
               project created by Timothy Munro Roberts. It is not sponsored,

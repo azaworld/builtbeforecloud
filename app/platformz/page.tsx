@@ -582,7 +582,7 @@ export default function PlatformzPage() {
       {/* ============ FINAL CTA ============ */}
       <div className="mx-auto max-w-3xl px-4 pb-20 text-center">
         <div className="flex flex-wrap justify-center gap-4">
-          <CTAButton href="/contact">Explore Platformz</CTAButton>
+          <CTAButton href="/platformz/technology">Explore Platformz</CTAButton>
           <CTAButton href="/archive/platformz-fur4-deployment" variant="secondary">
             See Platformz in Operation
           </CTAButton>
