@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { people } from "@/lib/people";
 import { archiveItems } from "@/lib/archive";
 
+export const dynamic = "force-static";
+
 const BASE = "https://builtbeforecloud.com";
 
 const staticRoutes = [
