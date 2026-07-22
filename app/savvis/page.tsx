@@ -8,7 +8,7 @@ import ChapterEndCTA from "@/components/ChapterEndCTA";
 export const metadata: Metadata = {
   title: "Savvis: Fixing the Road Before Streaming Arrived",
   description:
-    "How DiamondNet became Savvis and attempted to engineer around the network bottlenecks preventing reliable media and enterprise Internet services.",
+    "How Tim Roberts (Timothy Munro Roberts) co-founded Savvis: DiamondNet's transformation and the attempt to engineer around the network bottlenecks preventing reliable media and enterprise Internet services.",
 };
 
 export default function SavvisPage() {

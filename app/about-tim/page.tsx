@@ -7,7 +7,7 @@ import ChapterEndCTA from "@/components/ChapterEndCTA";
 export const metadata: Metadata = {
   title: "About Tim: Timothy Munro Roberts",
   description:
-    "From Whackoland to Platformz—Timothy Munro Roberts has spent most of his life building the layer beneath the next digital experience.",
+    "From Whackoland to Platformz—Timothy Munro Roberts (Tim Roberts) has spent most of his life building the layer beneath the next digital experience.",
 };
 
 export default function AboutTimPage() {

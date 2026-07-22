@@ -8,7 +8,7 @@ import ChapterEndCTA from "@/components/ChapterEndCTA";
 export const metadata: Metadata = {
   title: "The Origin: The Man Who Made Big Ideas Feel Normal",
   description:
-    "How William Munro 'Monty' Roberts III—Ford, Young & Rubicam, Anheuser-Busch, motorsports and later Episcopal ministry—taught Tim Roberts to think at scale.",
+    "How William Munro 'Monty' Roberts III—Ford, Young & Rubicam, Anheuser-Busch, motorsports and later Episcopal ministry—taught Tim Roberts (Timothy Munro Roberts) to think at scale.",
 };
 
 export default function OriginPage() {

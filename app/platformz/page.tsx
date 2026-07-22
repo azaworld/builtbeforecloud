@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title:
     "Platformz: The Enterprise Operating System Tim Roberts Spent a Lifetime Building",
   description:
-    "Discover how lessons from Whackoland, Savvis, Intira, digital distribution, cloud commerce and FUR4 converged into Platformz, a reusable operating foundation for complex businesses.",
+    "Discover how Timothy Munro Roberts's lessons from Whackoland, Savvis, Intira, digital distribution, cloud commerce and FUR4 converged into Platformz, a reusable operating foundation for complex businesses.",
 };
 
 const contributed = [

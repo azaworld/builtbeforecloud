@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title:
     "From Phantom and GameStreamer to Savtira: The Missing Pieces Behind Platformz",
   description:
-    "Gaming, digital distribution, media, cloud commerce, marketplaces, subscriptions, payments, multi-tenancy—and the expensive lessons that made the final architecture possible.",
+    "Tim Roberts's ventures between Intira and Platformz: gaming, digital distribution, media, cloud commerce, marketplaces, subscriptions, payments, multi-tenancy—and the expensive lessons that made the final architecture possible.",
 };
 
 const ventures = [

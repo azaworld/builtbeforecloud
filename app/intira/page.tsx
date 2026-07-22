@@ -8,7 +8,7 @@ import ChapterEndCTA from "@/components/ChapterEndCTA";
 export const metadata: Metadata = {
   title: "Intira: Everything Beneath the Application",
   description:
-    "How NetSourcing combined data centers, networks, servers, storage, security, monitoring and operations before cloud computing became standard terminology.",
+    "How Tim Roberts (Timothy Munro Roberts) co-founded Intira, whose NetSourcing service combined data centers, networks, servers, storage, security, monitoring and operations before cloud computing became standard terminology.",
 };
 
 const managedStack = [

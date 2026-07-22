@@ -10,7 +10,7 @@ import ChapterEndCTA from "@/components/ChapterEndCTA";
 export const metadata: Metadata = {
   title: "Whackoland BBS: The W(hack)o Cracko Brothers",
   description:
-    "Two fourteen-year-old identical twins, one telephone line, Whackoland BBS, Commodore computers, TAP, Phrack and the St. Louis computer underground.",
+    "How Tim Roberts (Timothy Munro Roberts) and his twin Peter ran Whackoland BBS: two fourteen-year-old identical twins, one telephone line, Commodore computers, TAP, Phrack and the St. Louis computer underground.",
 };
 
 export default function WhackolandPage() {

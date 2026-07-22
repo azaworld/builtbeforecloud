@@ -5,7 +5,7 @@ import ClaimLabel, { type ClaimType } from "@/components/ClaimLabel";
 export const metadata: Metadata = {
   title: "Timeline",
   description:
-    "From Whackoland BBS and the St. Louis modem community through Savvis, Intira, digital distribution and Platformz—one connected timeline.",
+    "The Timothy Munro Roberts (Tim Roberts) timeline: from Whackoland BBS and the St. Louis modem community through Savvis, Intira, digital distribution and Platformz—one connected story.",
 };
 
 type Entry = {

@@ -38,7 +38,29 @@ export const metadata: Metadata = {
     template: "%s | Built Before Cloud",
   },
   description:
-    "The firsthand, research-supported story of Timothy Roberts—from the Wacko Cracko Brothers and Whackoland BBS to Savvis, Intira’s NetSourcing model and Platformz, the enterprise operating infrastructure his entire life prepared him to build.",
+    "The firsthand, research-supported story of Timothy Munro Roberts (Tim Roberts)—from the Wacko Cracko Brothers and Whackoland BBS to Savvis, Intira’s NetSourcing model and Platformz, the enterprise operating infrastructure his entire life prepared him to build.",
+  keywords: [
+    "Timothy Munro Roberts",
+    "Tim Roberts",
+    "Timothy Roberts",
+    "Built Before Cloud",
+    "Whackoland BBS",
+    "W(hack)o Cracko Brothers",
+    "Savvis",
+    "DiamondNet",
+    "Intira",
+    "NetSourcing",
+    "Platformz",
+    "DIaaS",
+    "Looking Glass Control Tower",
+    "SaaS Foundry",
+    "FUR4",
+    "cloud computing history",
+    "St. Louis BBS",
+    "Phrack",
+  ],
+  authors: [{ name: "Timothy Munro Roberts", url: "https://builtbeforecloud.com/about-tim" }],
+  creator: "Timothy Munro Roberts",
   openGraph: {
     siteName: "Built Before Cloud",
     type: "website",
@@ -50,6 +72,34 @@ export const metadata: Metadata = {
   },
 };
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Timothy Munro Roberts",
+  alternateName: ["Tim Roberts", "Timothy Roberts"],
+  url: "https://builtbeforecloud.com/about-tim",
+  description:
+    "Technology founder: Whackoland BBS, co-founder of Savvis and Intira (NetSourcing), and founder of Platformz, the enterprise operating foundation.",
+  knowsAbout: [
+    "cloud computing",
+    "network infrastructure",
+    "managed hosting",
+    "enterprise software",
+    "digital distribution",
+  ],
+  sameAs: ["https://platformz.us/"],
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Built Before Cloud",
+  url: "https://builtbeforecloud.com",
+  description:
+    "The firsthand, research-supported story of Timothy Munro Roberts (Tim Roberts)—from Whackoland BBS to Savvis, Intira and Platformz.",
+  author: { "@type": "Person", name: "Timothy Munro Roberts" },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -57,6 +107,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+      </head>
       <body
         className={`${spaceGrotesk.variable} ${inter.variable} ${plexMono.variable} ${sourceSerif.variable} antialiased`}
       >
