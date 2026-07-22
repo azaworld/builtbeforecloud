@@ -29,6 +29,14 @@ export const metadata: Metadata = {
     description:
       "Platformz, founded by Timothy Munro Roberts (Tim Roberts), makes all the systems required to run a business behave like one system. Flagship product: DIaaS. Command layer: Looking Glass. Software engine: SaaS Foundry.",
     url: "https://builtbeforecloud.com/platformz",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Built Before the Cloud — the story of Timothy Munro Roberts (Tim Roberts), founder of Platformz",
+      },
+    ],
   },
 };
 

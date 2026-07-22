@@ -79,7 +79,22 @@ export const metadata: Metadata = {
     url: "https://builtbeforecloud.com",
     title: "Tim Roberts: From Whackoland and Savvis to Intira and Platformz",
     description:
-      "The firsthand, research-supported story of Timothy Roberts—from Whackoland BBS and the earliest digital communities to Savvis, Intira and Platformz, the enterprise operating infrastructure built from a lifetime of connecting people, systems and businesses.",
+      "The firsthand, research-supported story of Timothy Munro Roberts (Tim Roberts)—from Whackoland BBS and the earliest digital communities to Savvis, Intira and Platformz, the enterprise operating infrastructure built from a lifetime of connecting people, systems and businesses.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Built Before the Cloud — the story of Timothy Munro Roberts (Tim Roberts), founder of Platformz",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Built Before the Cloud — Timothy Munro Roberts (Tim Roberts)",
+    description:
+      "From Whackoland BBS to Savvis, Intira and Platformz. The firsthand story of Timothy Munro Roberts (Tim Roberts), founder of Platformz.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -90,6 +105,7 @@ const personJsonLd = {
   name: "Timothy Munro Roberts",
   alternateName: ["Tim Roberts", "Timothy Roberts"],
   url: "https://builtbeforecloud.com/about-tim",
+  image: "https://builtbeforecloud.com/images/tim-roberts.jpg",
   jobTitle: "Founder, Platformz",
   worksFor: {
     "@type": "Organization",
