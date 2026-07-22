@@ -157,7 +157,9 @@ const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Built Before Cloud",
+  alternateName: ["Built Before the Cloud", "Before the Cloud"],
   url: "https://builtbeforecloud.com",
+  sameAs: ["https://beforethecloud.com", "https://timothymunroroberts.com/"],
   description:
     "The firsthand, research-supported story of Timothy Munro Roberts (Tim Roberts)—from Whackoland BBS to Savvis, Intira and Platformz.",
   author: {

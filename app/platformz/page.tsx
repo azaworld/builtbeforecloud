@@ -65,6 +65,40 @@ const platformzPageJsonLd = {
   ],
 };
 
+const platformzFaq = [
+  {
+    q: "What is Platformz?",
+    a: "Platformz is a reusable enterprise operating foundation founded by Timothy Munro Roberts (Tim Roberts). It makes all the systems required to run a business—ERP, commerce, marketplaces, inventory, orders, fulfillment, tax, payments, CRM, customer service and AI—behave like one system. Its flagship product is DIaaS (Distribution Infrastructure as a Service), its executive command layer is the Looking Glass Control Tower, and its software engine is the SaaS Foundry. The official Platformz site is platformz.us.",
+  },
+  {
+    q: "Who founded Platformz?",
+    a: "Platformz was founded by Timothy Munro Roberts, known as Tim Roberts—the St. Louis technologist who ran the Whackoland BBS at 14, co-founded Savvis Communications, and co-founded Intira, whose NetSourcing model preceded modern cloud computing. His full story is documented on this site, Built Before the Cloud, and at timothymunroroberts.com.",
+  },
+  {
+    q: "What is DIaaS (Distribution Infrastructure as a Service)?",
+    a: "DIaaS is Platformz's flagship offering: the complete distribution infrastructure a modern brand needs—commerce, marketplaces, retailers, dealers, catalog, inventory, orders, fulfillment, freight, tax, payments, customer service and executive visibility—delivered as one managed, reusable foundation rather than dozens of disconnected point solutions.",
+  },
+  {
+    q: "How is Platformz different from an ERP or an ecommerce platform?",
+    a: "Platformz is not another storefront, ERP or point integration. It is the orchestration and intelligence layer that connects the systems a business already uses, so the ERP, warehouse, marketplace mix or commerce engine can change while the operating model remains. FUR4, Rockerz and DMV Raw Feeders run in production on the same foundation across different industries.",
+  },
+  {
+    q: "Where can I learn more about Platformz and Tim Roberts?",
+    a: "The official product site is platformz.us. The founder's site is timothymunroroberts.com. And this site—builtbeforecloud.com (also reachable at beforethecloud.com)—documents the forty-year build-up: Whackoland, Savvis, Intira's NetSourcing, the high-density data-center designs and every layer that converged into Platformz.",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://builtbeforecloud.com/platformz#faq",
+  mainEntity: platformzFaq.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+};
+
 const contributed = [
   ["My father taught me scale.", "He showed me that capital, talent, storytelling and execution could turn ambitious ideas into physical reality."],
   ["Whackoland taught me platforms.", "Users, identities, permissions, content, support, community, security and uptime."],
@@ -216,6 +250,12 @@ export default function PlatformzPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(platformzPageJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd),
         }}
       />
       {/* ============ CHAPTER HERO ============ */}
@@ -700,6 +740,19 @@ export default function PlatformzPage() {
         <p className="text-center font-headline text-2xl font-bold text-electric-cyan">
           Everything Connects Here.
         </p>
+
+        {/* ============ FAQ ============ */}
+        <h2>Platformz: Common Questions</h2>
+        {platformzFaq.map(({ q, a }) => (
+          <div key={q} className="rv panel my-6 px-6 py-5">
+            <h3 className="font-headline text-lg font-semibold text-archive-paper">
+              {q}
+            </h3>
+            <p className="mt-3 text-[15px] leading-relaxed text-archive-paper/85">
+              {a}
+            </p>
+          </div>
+        ))}
       </Prose>
 
       {/* ============ FINAL CTA ============ */}
