@@ -33,6 +33,7 @@ export default function IntiraPage() {
     <>
       <ChapterHero
         eyebrow="Chapter Two"
+        ghost="02"
         title={
           <>
             Intira: Everything
@@ -71,18 +72,18 @@ export default function IntiraPage() {
         <p>The customer supplied the application.</p>
         <p>Intira managed the environment underneath it:</p>
 
-        <div className="my-8 grid grid-cols-2 gap-2 sm:grid-cols-3">
+        <div className="my-8 flex flex-wrap gap-2">
           {managedStack.map((item) => (
-            <div
+            <span
               key={item}
-              className="rounded-sm border border-signal-blue/30 bg-infra-navy/60 px-3 py-2 font-mono text-xs text-technical-gray"
+              className="rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-1.5 font-mono text-xs text-technical-gray transition-colors hover:border-electric-cyan/50 hover:text-electric-cyan"
             >
               {item}
-            </div>
+            </span>
           ))}
         </div>
 
-        <div className="my-8 rounded-sm border border-electric-cyan/40 bg-infra-navy/60 p-6">
+        <div className="my-8 panel panel-cyan p-6">
           <p className="font-mono text-xs uppercase tracking-widest text-electric-cyan">
             Primary Historical Positioning
           </p>
@@ -122,7 +123,7 @@ export default function IntiraPage() {
         </FounderQuote>
 
         <h2>Blade Servers and Virtual Machines</h2>
-        <div className="my-8 rounded-sm border border-warm-copper/40 bg-infra-navy/60 p-6">
+        <div className="my-8 panel panel-copper p-6">
           <div className="mb-3">
             <ClaimLabel type="founder-recollection" />
           </div>

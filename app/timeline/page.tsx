@@ -104,22 +104,38 @@ export default function TimelinePage() {
         }
       />
 
-      <div className="mx-auto max-w-3xl px-4 py-16">
-        <ol className="relative border-l border-signal-blue/40 pl-8">
+      <div className="mx-auto max-w-4xl px-5 py-20">
+        <ol className="rv-children relative">
+          {/* Spine */}
+          <span
+            aria-hidden
+            className="absolute bottom-4 left-[7px] top-4 w-px bg-gradient-to-b from-electric-cyan/50 via-signal-blue/30 to-transparent sm:left-[10.35rem]"
+          />
           {entries.map((entry) => (
-            <li key={entry.era + entry.title} className="mb-12 last:mb-0">
-              <span className="absolute -left-[5px] mt-2 h-2.5 w-2.5 rounded-full bg-electric-cyan" />
-              <p className="font-mono text-sm font-semibold text-electric-cyan">
+            <li
+              key={entry.era + entry.title}
+              className="group relative grid gap-3 pb-14 pl-10 last:pb-0 sm:grid-cols-[8.5rem_1fr] sm:gap-8 sm:pl-0"
+            >
+              {/* Node */}
+              <span
+                aria-hidden
+                className="absolute left-0 top-[7px] h-[15px] w-[15px] rounded-full border border-electric-cyan/60 bg-network-black transition-all duration-300 group-hover:border-electric-cyan group-hover:shadow-[0_0_16px_rgba(64,217,232,0.6)] sm:left-[9.9rem]"
+              >
+                <span className="absolute inset-[4px] rounded-full bg-electric-cyan/70" />
+              </span>
+              <p className="pt-0.5 font-mono text-sm font-semibold tracking-wide text-electric-cyan sm:text-right">
                 {entry.era}
               </p>
-              <h2 className="mt-1 font-headline text-xl font-bold">
-                {entry.title}
-              </h2>
-              <p className="mt-2 leading-relaxed text-technical-gray">
-                {entry.body}
-              </p>
-              <div className="mt-3">
-                <ClaimLabel type={entry.claim} />
+              <div className="sm:pl-10">
+                <h2 className="font-headline text-[1.35rem] font-bold leading-snug tracking-[-0.01em]">
+                  {entry.title}
+                </h2>
+                <p className="mt-3 leading-[1.8] text-technical-gray">
+                  {entry.body}
+                </p>
+                <div className="mt-4">
+                  <ClaimLabel type={entry.claim} />
+                </div>
               </div>
             </li>
           ))}

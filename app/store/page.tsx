@@ -43,7 +43,7 @@ export default function StorePage() {
           {upcoming.map((product) => (
             <div
               key={product.name}
-              className="rounded-sm border border-signal-blue/30 bg-infra-navy/50 p-6"
+              className="panel p-6"
             >
               <p className="font-mono text-[10px] uppercase tracking-widest text-warm-copper">
                 Coming Soon
@@ -58,7 +58,7 @@ export default function StorePage() {
           ))}
         </div>
 
-        <p className="mt-12 rounded-sm border border-signal-blue/30 bg-infra-navy/60 p-4 text-center font-mono text-xs leading-relaxed text-technical-gray">
+        <p className="mt-12 panel p-4 text-center font-mono text-xs leading-relaxed text-technical-gray">
           All store items use original Built Before Cloud designs. Third-party
           logos are never used as store identity. No endorsement or current
           affiliation with any company named in this project is implied.

@@ -8,12 +8,14 @@ export default function ChapterEndCTA({
   label: string;
 }) {
   return (
-    <div className="mx-auto max-w-3xl px-4 pb-20 text-center">
+    <div className="rv mx-auto max-w-3xl px-5 pb-24 text-center">
+      <span aria-hidden className="hairline mx-auto mb-12 block w-full max-w-md" />
       <CTAButton href={href}>{label}</CTAButton>
       {/* Closing statement used throughout the site */}
-      <p className="mt-12 border-t border-signal-blue/20 pt-8 font-serif text-base italic leading-relaxed text-technical-gray">
+      <p className="mt-14 font-serif text-lg italic leading-relaxed text-technical-gray">
         The cloud was not invented in a moment. It was built layer by layer.
-        Platformz brings those layers together.
+        <br className="hidden sm:block" /> Platformz brings those layers
+        together.
       </p>
     </div>
   );

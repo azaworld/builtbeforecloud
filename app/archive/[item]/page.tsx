@@ -64,14 +64,14 @@ export default async function ArchiveItemPage({
         {archiveItem.description}
       </p>
 
-      <p className="mt-10 rounded-sm border border-signal-blue/30 bg-infra-navy/60 p-4 font-mono text-xs leading-relaxed text-technical-gray">
+      <p className="mt-10 panel p-4 font-mono text-xs leading-relaxed text-technical-gray">
         Historical material displayed for documentary and educational
         purposes. All trademarks and logos remain the property of their
         respective owners. No endorsement or current affiliation is implied.
       </p>
 
       {archiveItem.status === "seeking" && (
-        <div className="mt-6 rounded-sm border border-warm-copper/40 bg-infra-navy/60 p-6">
+        <div className="mt-6 panel panel-copper p-6">
           <p className="font-mono text-xs uppercase tracking-widest text-warm-copper">
             Help Document This
           </p>

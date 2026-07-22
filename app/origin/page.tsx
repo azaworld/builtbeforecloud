@@ -16,6 +16,7 @@ export default function OriginPage() {
     <>
       <ChapterHero
         eyebrow="Chapter Zero"
+        ghost="00"
         title={
           <>
             The Man Who Made
@@ -38,7 +39,7 @@ export default function OriginPage() {
           called him Monty.
         </p>
 
-        <div className="my-8 rounded-sm border border-signal-blue/30 bg-infra-navy/60 p-6">
+        <div className="my-8 panel p-6">
           <div className="mb-3">
             <ClaimLabel type="family-record" />
           </div>

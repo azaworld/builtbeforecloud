@@ -93,6 +93,7 @@ export default function MissingPiecesPage() {
     <>
       <ChapterHero
         eyebrow="Chapter Three"
+        ghost="03"
         title="The Missing Pieces"
         subtitle={
           <p>

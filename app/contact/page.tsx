@@ -46,7 +46,7 @@ export default function ContactPage() {
           {channels.map((channel) => (
             <div
               key={channel.email}
-              className="rounded-sm border border-signal-blue/30 bg-infra-navy/50 p-6"
+              className="panel p-6"
             >
               <p className="font-headline font-semibold text-archive-paper">
                 {channel.purpose}

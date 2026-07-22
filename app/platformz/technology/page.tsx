@@ -78,7 +78,7 @@ export default function PlatformzTechnologyPage() {
           {products.map((product) => (
             <div
               key={product.name}
-              className="rounded-sm border border-signal-blue/30 bg-infra-navy/60 p-6"
+              className="panel p-6"
             >
               <h3 className="font-headline text-xl font-bold text-electric-cyan">
                 {product.name}

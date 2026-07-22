@@ -352,7 +352,7 @@ export default function SourcesPage() {
           {classifications.map((c) => (
             <div
               key={c.type}
-              className="rounded-sm border border-signal-blue/30 bg-infra-navy/50 p-6"
+              className="panel p-6"
             >
               <ClaimLabel type={c.type} />
               <h2 className="mt-3 font-headline text-xl font-bold">
@@ -376,7 +376,7 @@ export default function SourcesPage() {
           {sourceGroups.map((group) => (
             <section
               key={group.heading}
-              className="rounded-sm border border-signal-blue/30 bg-infra-navy/50 p-6"
+              className="panel p-6"
             >
               <h3 className="font-headline text-lg font-bold text-archive-paper">
                 {group.heading}
@@ -408,7 +408,7 @@ export default function SourcesPage() {
         </div>
 
         {/* ============ OPEN CLAIMS ============ */}
-        <section className="mt-16 rounded-sm border border-warm-copper/40 bg-infra-navy/60 p-6">
+        <section className="mt-16 panel panel-copper p-6">
           <h2 className="font-headline text-xl font-bold text-warm-copper">
             Claims That Still Need Public Weblinks
           </h2>

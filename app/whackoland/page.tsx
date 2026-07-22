@@ -18,6 +18,7 @@ export default function WhackolandPage() {
     <>
       <ChapterHero
         eyebrow="Prologue"
+        ghost="0P"
         title="The W(hack)o Cracko Brothers"
         subtitle={
           <p>Two Fourteen-Year-Old Twins and One Telephone Line</p>
@@ -99,7 +100,7 @@ export default function WhackolandPage() {
           <li>The legacy of TAP and Abbie Hoffman</li>
         </ul>
 
-        <div className="my-8 rounded-sm border border-signal-blue/30 bg-infra-navy/60 p-6">
+        <div className="my-8 panel p-6">
           <div className="mb-3 flex items-center gap-3">
             <span className="font-mono text-xs uppercase tracking-widest text-signal-blue">
               Chronology

@@ -145,7 +145,7 @@ function Pills({ items }: { items: string[] }) {
       {items.map((item) => (
         <span
           key={item}
-          className="rounded-sm border border-signal-blue/30 bg-infra-navy/60 px-3 py-1.5 font-mono text-xs text-technical-gray"
+          className="rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-1.5 font-mono text-xs text-technical-gray transition-colors hover:border-electric-cyan/50 hover:text-electric-cyan"
         >
           {item}
         </span>
@@ -158,18 +158,24 @@ export default function PlatformzPage() {
   return (
     <>
       {/* ============ CHAPTER HERO ============ */}
-      <section className="signal-grid border-b border-signal-blue/20 bg-infra-navy/40">
-        <div className="mx-auto max-w-4xl px-4 py-20 text-center sm:py-24">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-warm-copper">
+      <section className="signal-grid relative overflow-hidden border-b border-white/[0.06]">
+        <span
+          aria-hidden
+          className="ghost-glyph left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[30rem] sm:text-[40rem]"
+        >
+          ∞
+        </span>
+        <div className="relative z-10 mx-auto max-w-4xl px-5 py-24 text-center sm:py-28">
+          <p className="eyebrow-lined mx-auto flex w-full justify-center font-mono text-[11px] uppercase tracking-[0.35em] text-warm-copper">
             The Final Chapter Is Still Being Written
           </p>
-          <h1 className="mt-6 font-headline text-5xl font-bold sm:text-6xl">
+          <h1 className="headline-gradient mt-8 font-headline text-[clamp(3.25rem,9vw,6.5rem)] font-bold leading-none tracking-[-0.03em]">
             Platformz
           </h1>
-          <p className="mt-4 font-headline text-2xl text-electric-cyan">
+          <p className="mt-5 font-headline text-2xl font-semibold text-archive-paper">
             Everything Finally Connects.
           </p>
-          <div className="mt-12">
+          <div className="mt-14">
             <PlatformzHeroAnimation />
           </div>
         </div>
@@ -323,7 +329,7 @@ export default function PlatformzPage() {
           {architectureLayers.map((layer) => (
             <div
               key={layer.number}
-              className="rounded-sm border border-signal-blue/30 bg-infra-navy/60 p-6"
+              className="panel p-6"
             >
               <p className="font-mono text-xs uppercase tracking-widest text-signal-blue">
                 Layer {layer.number}

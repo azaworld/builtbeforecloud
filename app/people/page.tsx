@@ -30,7 +30,7 @@ export default function PeoplePage() {
             <Link
               key={person.slug}
               href={`/people/${person.slug}`}
-              className="group rounded-sm border border-signal-blue/30 bg-infra-navy/50 p-6 transition-colors hover:border-electric-cyan/60"
+              className="group panel p-6 panel-hover"
             >
               <h2 className="font-headline text-xl font-bold group-hover:text-electric-cyan">
                 {person.name}

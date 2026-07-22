@@ -26,7 +26,7 @@ export default function ArchivePage() {
       />
 
       <div className="mx-auto max-w-5xl px-4 py-16">
-        <p className="mb-10 rounded-sm border border-signal-blue/30 bg-infra-navy/60 p-4 font-mono text-xs leading-relaxed text-technical-gray">
+        <p className="mb-10 panel p-4 font-mono text-xs leading-relaxed text-technical-gray">
           Historical material displayed for documentary and educational
           purposes. All trademarks and logos remain the property of their
           respective owners. No endorsement or current affiliation is implied.
@@ -37,7 +37,7 @@ export default function ArchivePage() {
             <Link
               key={item.slug}
               href={`/archive/${item.slug}`}
-              className="group flex flex-col rounded-sm border border-signal-blue/30 bg-infra-navy/50 p-6 transition-colors hover:border-electric-cyan/60"
+              className="group flex flex-col panel p-6 panel-hover"
             >
               <div className="flex items-center justify-between gap-2">
                 <span className="font-mono text-xs text-signal-blue">

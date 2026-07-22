@@ -21,24 +21,24 @@ export default function LifeToPlatformzMap() {
   const [selected, setSelected] = useState(chapters.length - 1);
 
   return (
-    <div className="rounded-sm border border-signal-blue/30 bg-infra-navy/60 p-6">
-      <p className="font-mono text-xs uppercase tracking-widest text-signal-blue">
-        Interactive: Life to Platformz
+    <div className="panel panel-cyan p-7 sm:p-9">
+      <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-electric-cyan">
+        Interactive · Life to Platformz
       </p>
       <p className="mt-2 text-sm text-technical-gray">
         Select a chapter to see what it contributed to Platformz.
       </p>
 
-      <div className="mt-6 flex flex-wrap gap-2">
+      <div className="mt-7 flex flex-wrap gap-2">
         {chapters.map((c, i) => (
           <button
             key={c.chapter}
             type="button"
             onClick={() => setSelected(i)}
-            className={`rounded-sm border px-3 py-1.5 font-mono text-xs uppercase tracking-wider transition-colors ${
+            className={`rounded-full border px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.1em] transition-all duration-300 ${
               selected === i
-                ? "border-electric-cyan bg-electric-cyan text-network-black"
-                : "border-technical-gray/40 text-technical-gray hover:border-electric-cyan hover:text-electric-cyan"
+                ? "border-electric-cyan bg-electric-cyan text-network-black shadow-[0_0_24px_rgba(64,217,232,0.4)]"
+                : "border-white/15 text-technical-gray hover:border-electric-cyan/60 hover:text-electric-cyan"
             }`}
           >
             {c.chapter}
@@ -46,12 +46,15 @@ export default function LifeToPlatformzMap() {
         ))}
       </div>
 
-      <div className="mt-6 border-l-2 border-warm-copper pl-4">
-        <p className="font-headline text-lg font-semibold text-archive-paper">
+      <div className="mt-8 border-l-2 border-warm-copper pl-5" aria-live="polite">
+        <p className="font-headline text-xl font-bold text-archive-paper">
           {chapters[selected].chapter}
         </p>
-        <p className="mt-1 text-technical-gray">
-          Platformz capability: {chapters[selected].capability}
+        <p className="mt-1.5 leading-relaxed text-technical-gray">
+          Platformz capability:{" "}
+          <span className="text-archive-paper/90">
+            {chapters[selected].capability}
+          </span>
         </p>
       </div>
     </div>

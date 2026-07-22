@@ -65,7 +65,7 @@ export default async function PersonPage({
         </p>
       </div>
 
-      <div className="mt-10 rounded-sm border border-warm-copper/40 bg-infra-navy/60 p-6">
+      <div className="mt-10 panel panel-copper p-6">
         <p className="font-mono text-xs uppercase tracking-widest text-warm-copper">
           Right of Response
         </p>

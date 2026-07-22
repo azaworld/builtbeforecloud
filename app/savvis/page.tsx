@@ -16,6 +16,7 @@ export default function SavvisPage() {
     <>
       <ChapterHero
         eyebrow="Chapter One"
+        ghost="01"
         title={
           <>
             Savvis: Fixing the Road
@@ -107,7 +108,7 @@ export default function SavvisPage() {
           financial operation.
         </p>
 
-        <div className="my-8 rounded-sm border border-technical-gray/40 bg-infra-navy/60 p-6">
+        <div className="my-8 panel p-6">
           <div className="mb-3">
             <ClaimLabel type="disputed-or-incomplete" />
           </div>
@@ -125,7 +126,7 @@ export default function SavvisPage() {
           settled and I left the company.”
         </FounderQuote>
 
-        <div className="my-8 rounded-sm border border-warm-copper/40 bg-infra-navy/60 p-6">
+        <div className="my-8 panel panel-copper p-6">
           <p className="font-mono text-xs uppercase tracking-widest text-warm-copper">
             Permanent Right-of-Response Notice
           </p>
