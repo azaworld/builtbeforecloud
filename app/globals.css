@@ -8,7 +8,8 @@
   --color-electric-cyan: #40d9e8;
   --color-archive-paper: #f2efe6;
   --color-warm-copper: #c77b50;
-  --color-technical-gray: #9ba7b0;
+  /* Brightened one step from spec #9BA7B0 for on-screen legibility */
+  --color-technical-gray: #a9b6c0;
 
   /* Typography */
   --font-headline: var(--font-space-grotesk), sans-serif;
@@ -22,11 +23,12 @@ html {
 }
 
 body {
-  background-color: var(--color-network-black);
+  background-color: #071120;
   background-image:
-    radial-gradient(1200px 800px at 85% -10%, rgba(20, 126, 163, 0.14), transparent 60%),
-    radial-gradient(900px 700px at -15% 25%, rgba(64, 217, 232, 0.06), transparent 55%),
-    radial-gradient(1100px 900px at 50% 130%, rgba(8, 26, 43, 0.95), transparent 72%);
+    radial-gradient(1200px 800px at 85% -10%, rgba(20, 126, 163, 0.22), transparent 60%),
+    radial-gradient(900px 700px at -15% 25%, rgba(64, 217, 232, 0.1), transparent 55%),
+    radial-gradient(800px 500px at 50% 0%, rgba(242, 239, 230, 0.04), transparent 70%),
+    radial-gradient(1100px 900px at 50% 130%, rgba(8, 26, 43, 0.9), transparent 72%);
   background-attachment: fixed;
   color: var(--color-archive-paper);
   font-family: var(--font-body);
@@ -72,11 +74,11 @@ h1, h2, h3 {
 /* ============ Panel system ============ */
 .panel {
   position: relative;
-  border: 1px solid rgba(64, 217, 232, 0.1);
+  border: 1px solid rgba(64, 217, 232, 0.18);
   border-radius: 0.875rem;
   background:
-    linear-gradient(165deg, rgba(242, 239, 230, 0.045), rgba(242, 239, 230, 0.012) 55%),
-    rgba(8, 26, 43, 0.35);
+    linear-gradient(165deg, rgba(242, 239, 230, 0.07), rgba(242, 239, 230, 0.02) 55%),
+    rgba(12, 34, 54, 0.45);
   transition:
     border-color 0.4s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
@@ -117,7 +119,7 @@ h1, h2, h3 {
   font-weight: 700;
   line-height: 0.8;
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(64, 217, 232, 0.09);
+  -webkit-text-stroke: 1.5px rgba(64, 217, 232, 0.13);
   pointer-events: none;
   user-select: none;
 }
@@ -200,8 +202,8 @@ h1, h2, h3 {
 .signal-grid {
   position: relative;
   background-image:
-    linear-gradient(to right, rgba(64, 217, 232, 0.045) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(64, 217, 232, 0.045) 1px, transparent 1px);
+    linear-gradient(to right, rgba(64, 217, 232, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(64, 217, 232, 0.06) 1px, transparent 1px);
   background-size: 56px 56px;
 }
 .signal-grid::before {

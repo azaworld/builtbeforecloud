@@ -109,13 +109,13 @@ export default function HomePage() {
     <>
       {/* ================= HERO ================= */}
       <section className="signal-grid relative overflow-hidden border-b border-white/[0.06]">
-        <div className="relative z-10 mx-auto max-w-5xl px-5 pb-24 pt-24 sm:pt-32">
+        <div className="relative z-10 mx-auto max-w-6xl px-5 pb-24 pt-24 sm:pt-32">
           <p className="eyebrow-lined mx-auto flex w-full justify-center font-mono text-[11px] uppercase tracking-[0.35em] text-electric-cyan">
             <span className="live-dot mr-3 self-center" aria-hidden />
             From 300 Baud to the Intelligent Enterprise
           </p>
 
-          <h1 className="mt-10 text-center font-headline text-[clamp(2.75rem,7.5vw,5.75rem)] font-bold leading-[0.98] tracking-[-0.025em]">
+          <h1 className="mt-10 text-center font-headline text-[clamp(2.5rem,6.2vw,4.9rem)] font-bold leading-[1.02] tracking-[-0.025em]">
             Before the Web.
             <br />
             Before Streaming Worked.
@@ -127,7 +127,7 @@ export default function HomePage() {
 
           <span aria-hidden className="hairline mx-auto mt-14 block w-48" />
 
-          <div className="rv-children mx-auto mt-14 max-w-2xl space-y-4 text-lg leading-[1.8] text-archive-paper/85">
+          <div className="rv-children mx-auto mt-14 max-w-2xl space-y-4 text-lg leading-[1.8] text-archive-paper/95">
             <p className="first-letter:float-left first-letter:mr-3 first-letter:font-serif first-letter:text-[3.4rem] first-letter:leading-[0.85] first-letter:text-electric-cyan">
               My name is Timothy Munro Roberts.
             </p>
@@ -147,7 +147,7 @@ export default function HomePage() {
             The W(hack)o Cracko Brothers
           </p>
 
-          <div className="rv-children mx-auto max-w-2xl space-y-4 text-lg leading-[1.8] text-archive-paper/85">
+          <div className="rv-children mx-auto max-w-2xl space-y-4 text-lg leading-[1.8] text-archive-paper/95">
             <p>There was no public World Wide Web.</p>
             <p>
               There was no Google, YouTube, Reddit, Discord, Facebook, AWS or
@@ -175,7 +175,7 @@ export default function HomePage() {
             <TerminalBlock lines={["WHACKOLAND BBS"]} />
           </div>
 
-          <div className="rv-children mx-auto max-w-2xl space-y-4 text-lg leading-[1.8] text-archive-paper/85">
+          <div className="rv-children mx-auto max-w-2xl space-y-4 text-lg leading-[1.8] text-archive-paper/95">
             <p>
               Whackoland had users, identities, passwords, permissions, private
               sections, downloadable software, message boards, community rules,
@@ -345,7 +345,7 @@ export default function HomePage() {
             Everything Led to <span className="headline-gradient">Platformz.</span>
           </h2>
 
-          <div className="rv-children mt-12 space-y-2.5 text-lg leading-relaxed text-archive-paper/85">
+          <div className="rv-children mt-12 space-y-2.5 text-lg leading-relaxed text-archive-paper/95">
             <p>The BBS taught community.</p>
             <p>J&amp;G taught integration.</p>
             <p>Savvis taught networks.</p>
