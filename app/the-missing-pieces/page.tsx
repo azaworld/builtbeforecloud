@@ -445,6 +445,124 @@ export default function MissingPiecesPage() {
           economics must both work.”
         </FounderQuote>
 
+        <h3>
+          In the Press: yBitcoin Names Him “Bitcoin’s Mr. Infrastructure”
+        </h3>
+        <p>
+          At the height of the HashingSpace era, <em>yBitcoin</em> magazine
+          (Volume 2, Issue 3) ran a multi-page feature titled{" "}
+          <strong>
+            “Bitcoin’s Mr. Infrastructure: HashingSpace Corporation’s Timothy
+            Roberts.”
+          </strong>{" "}
+          The cover story billing read: “HashingSpace Sets Out to Build
+          Infrastructure for Global Adoption.”
+        </p>
+        <p>The article documented, in print, the pattern this site traces:</p>
+        <ul>
+          <li>
+            <strong>The same instinct, a new industry.</strong> “I bought a
+            machine and started mining to see what it was all about. That led
+            to five machines, then ten, then to plans for building a large
+            network once I realized this is essentially what I had been doing
+            for the past 25 years.”
+          </li>
+          <li>
+            <strong>The economics of infrastructure.</strong> “Paying 30 cents
+            per kilowatt hour for power/hosting really put the squeeze on solo
+            miners. That’s when it became apparent to me that they needed data
+            centers with more and cheaper available power than they could get
+            alone.”
+          </li>
+          <li>
+            <strong>Wenatchee, Washington.</strong> HashingSpace hosted ASIC
+            miners from its data center in Wenatchee—home to cheap
+            hydroelectric power and cool weather—offering hashing power at
+            eight cents an hour through bulk purchases negotiated with
+            northwest power providers.
+          </li>
+          <li>
+            <strong>The full-stack ambition.</strong> Mining, wallets,
+            exchanges, ATMs and transaction processing—“the enterprise-grade
+            infrastructure Bitcoin needs for global adoption” (OTCQB: HSHS).
+          </li>
+          <li>
+            <strong>The backstory in print.</strong> The article retold the
+            arc: the St. Louis childhood with a twin brother pulling
+            all-nighters on early computers, the father who was an accomplished
+            Anheuser-Busch executive, Savvis launched at 22 (“We ran the
+            fastest Internet in the world for ten years”), its
+            multi-billion-dollar public-market history and eventual absorption
+            into CenturyLink.
+          </li>
+          <li>
+            <strong>The Steve Jobs phone call.</strong> “My dad knew Jobs, and
+            one day I asked him if he could arrange an introduction for me. My
+            dad said, ‘You don’t need an introduction, just pick up the phone;
+            he’ll talk to you.’ So I did, reached his assistant, and a minute
+            later I was talking to Jobs himself.”
+          </li>
+        </ul>
+
+        <PhotoGallery
+          title="yBitcoin Feature — Volume 2, Issue 3"
+          credit="yBitcoin magazine · sponsored feature · founder-supplied copy"
+          claim="contemporary-reporting"
+          photos={[
+            {
+              src: "/images/hashingspace/ybitcoin-page-4.jpg",
+              alt: "yBitcoin article: Bitcoin's Mr. Infrastructure — HashingSpace Corporation's Timothy Roberts",
+              width: 1154,
+              height: 1400,
+              caption:
+                "The feature opener: “Bitcoin’s Mr. Infrastructure: HashingSpace Corporation’s Timothy Roberts” — the mining economics, the Wenatchee hydroelectric data center, and the 25-year pattern behind it.",
+            },
+            {
+              src: "/images/hashingspace/ybitcoin-page-5.jpg",
+              alt: "yBitcoin article second page with Timothy Roberts at an electrical substation",
+              width: 1154,
+              height: 1400,
+              caption:
+                "Page two: Tim at the power infrastructure. Savvis at 22, the Steve Jobs phone call, and “you have to be willing to lead.”",
+            },
+            {
+              src: "/images/hashingspace/ybitcoin-page-1.jpg",
+              alt: "yBitcoin magazine cover — Introducing the Future of Money",
+              width: 1154,
+              height: 1400,
+              caption:
+                "The cover of yBitcoin, Volume 2, Issue 3: “Introducing the Future of Money,” with the HashingSpace feature billed on the front.",
+            },
+            {
+              src: "/images/hashingspace/ybitcoin-page-2.jpg",
+              alt: "yBitcoin table of contents listing the HashingSpace feature on page 68",
+              width: 1154,
+              height: 1400,
+              caption:
+                "In This Issue: “68 — HashingSpace Sets Out to Build Infrastructure for Global Adoption.”",
+            },
+            {
+              src: "/images/hashingspace/ybitcoin-page-3.jpg",
+              alt: "HashingSpace advertisement: A Blueprint for the Bitcoin Ecosystem",
+              width: 1154,
+              height: 1400,
+              caption:
+                "“A Blueprint for the Bitcoin Ecosystem — Mining. Wallets. Exchanges. ATMs. Transaction Processing.” The HashingSpace ad from the same issue (OTCQB: HSHS).",
+            },
+          ]}
+        />
+
+        <p>
+          <a
+            href="/docs/ybitcoin-hashingspace-tim-roberts.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 font-mono text-[12px] font-semibold uppercase tracking-[0.16em] text-electric-cyan underline decoration-electric-cyan/40 underline-offset-4 transition-colors hover:text-archive-paper"
+          >
+            Read the original yBitcoin feature (PDF, 5 pages) ↗
+          </a>
+        </p>
+
         <p>
           The HashingSpace era also produced the clearest surviving video
           record of the high-density design philosophy that began at Intira.
