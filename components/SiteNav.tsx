@@ -60,11 +60,11 @@ export default function SiteNav() {
 
       <div className="mx-auto flex max-w-[92rem] items-center justify-between gap-3 px-4 py-4 sm:gap-6 sm:px-5">
         <Link href="/" className="group flex min-w-0 items-center gap-2.5 sm:gap-3">
-          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl border border-electric-cyan/25 bg-electric-cyan/[0.07] transition-all duration-300 group-hover:border-electric-cyan/60 group-hover:shadow-[0_0_20px_rgba(64,217,232,0.35)] sm:h-10 sm:w-10">
-            <Logo className="h-6 w-6 sm:h-7 sm:w-7" />
+          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-electric-cyan/25 bg-electric-cyan/[0.07] transition-all duration-300 group-hover:border-electric-cyan/60 group-hover:shadow-[0_0_20px_rgba(64,217,232,0.35)] sm:h-12 sm:w-12 lg:h-14 lg:w-14">
+            <Logo className="h-7 w-7 sm:h-9 sm:w-9 lg:h-10 lg:w-10" />
           </span>
           <span className="flex min-w-0 flex-col leading-none">
-            <span className="truncate font-headline text-[12.5px] font-bold uppercase tracking-[0.12em] text-archive-paper sm:text-[15px] sm:tracking-[0.22em]">
+            <span className="truncate font-headline text-[12.5px] font-bold uppercase tracking-[0.12em] text-archive-paper sm:text-[16px] sm:tracking-[0.22em]">
               Built Before Cloud
             </span>
             <span className="mt-1.5 truncate font-mono text-[8.5px] uppercase tracking-[0.24em] text-electric-cyan/80 sm:text-[9px] sm:tracking-[0.3em]">
