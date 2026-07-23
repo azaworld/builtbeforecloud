@@ -352,6 +352,38 @@ export default function MissingPiecesPage() {
           capital partners.
         </p>
 
+        <PhotoGallery
+          title="GameStreamer — The Founder Archive"
+          credit="Founder-supplied photographs · GameStreamer"
+          claim="corroborated-recollection"
+          photos={[
+            {
+              src: "/images/gamestreamer/tim-roberts-michael-andretti-indycar.jpg",
+              alt: "Tim Roberts of GameStreamer with Indy driver Michael Andretti at an IZOD IndyCar hospitality event",
+              width: 831,
+              height: 1024,
+              caption:
+                "Tim Roberts, GameStreamer and Michael Andretti, Indy Driver",
+            },
+            {
+              src: "/images/gamestreamer/tim-roberts-dave-hunter-sega-london.jpg",
+              alt: "Tim Roberts and Dave Hunter at a GameStreamer platforms meeting with SEGA London",
+              width: 1024,
+              height: 768,
+              caption:
+                "Tim Roberts and Dave Hunter, GameStreamer meeting with SEGA London",
+            },
+            {
+              src: "/images/gamestreamer/tim-roberts-savvis-case-study-interview.jpg",
+              alt: "Tim Roberts being interviewed on camera for a Savvis customer case study while working for GameStreamer",
+              width: 1024,
+              height: 768,
+              caption:
+                "Tim Roberts being interviewed for a customer case study while working for GameStreamer by Savvis. GameStreamer was a large and valued Savvis customer.",
+            },
+          ]}
+        />
+
         <h2>Savtira</h2>
         <p>
           Savtira expanded the vision beyond games into broader cloud
