@@ -114,6 +114,30 @@ export default function MissingPiecesPage() {
           ]}
         />
 
+        <PhotoGallery
+          title="Broadband Investment Group — The Founder Archive"
+          credit="Founder-supplied photographs · Broadband Investment Group"
+          claim="corroborated-recollection"
+          photos={[
+            {
+              src: "/images/big-network-operations-center.jpg",
+              alt: "BIG Network Operations Center with wall monitors showing US maps and status logs, curved white operator desk",
+              width: 800,
+              height: 600,
+              caption:
+                "BIG Network Operations Center (later Savvis acquired building)",
+            },
+            {
+              src: "/images/savvis-world-headquarters.jpg",
+              alt: "Front and rear views of the former Brooks Fiber building that became Savvis World Headquarters after BIG secured the lease",
+              width: 1024,
+              height: 768,
+              caption:
+                "Savvis World Headquarters — front and rear views of the former Brooks Fiber building in St. Louis. Tim Roberts, on behalf of BIG (Broadband Investment Group), secured the building on a 99-year lease with a $1 buyout option before WorldCom and later Savvis held the asset.",
+            },
+          ]}
+        />
+
         <p>BIG taught me:</p>
         <ul>
           <li>Shared services can accelerate many companies.</li>
