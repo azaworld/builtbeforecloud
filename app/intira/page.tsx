@@ -333,6 +333,23 @@ export default function IntiraPage() {
 
         <h2>Digital Broadcast Network Becomes Intira</h2>
 
+        <ImageFigure
+          src="/images/intira/dbn-logo.png"
+          alt="Digital Broadcast Network logo: metallic wire-globe with lowercase dbn and digital broadcast network wordmark"
+          width={800}
+          height={800}
+          frame="light"
+          maxWidth="max-w-sm"
+          caption={
+            <>
+              The original Digital Broadcast Network (DBN) logo—the company that
+              became Intira.
+            </>
+          }
+          credit="Founder-supplied brand artifact"
+          claim="corroborated-recollection"
+        />
+
         <PhotoGallery
           title="1998: The Launch, in Print"
           credit="St. Louis Post-Dispatch · St. Louis Business Journal · founder-supplied clippings"
