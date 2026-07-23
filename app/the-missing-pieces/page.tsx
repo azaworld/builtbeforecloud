@@ -5,6 +5,7 @@ import Prose from "@/components/Prose";
 import FounderQuote from "@/components/FounderQuote";
 import ClaimLabel from "@/components/ClaimLabel";
 import VideoFigure from "@/components/VideoFigure";
+import ImageFigure from "@/components/ImageFigure";
 import PhotoGallery from "@/components/PhotoGallery";
 import ChapterEndCTA from "@/components/ChapterEndCTA";
 
@@ -87,6 +88,16 @@ export default function MissingPiecesPage() {
           It was to give portfolio companies shared infrastructure,
           leadership, talent, facilities and strategic support.
         </p>
+        <ImageFigure
+          src="/images/big-logo.jpg"
+          alt="Broadband Investment Group (BIG) logo — a stylized letter B with an orbit swoosh and a small runner figure"
+          width={432}
+          height={216}
+          frame="light"
+          maxWidth="max-w-sm"
+          caption="the Broadband Investment Group (BIG) logo"
+          claim="corroborated-recollection"
+        />
         <p>
           <ClaimLabel type="founder-recollection" />
         </p>
