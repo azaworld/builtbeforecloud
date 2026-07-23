@@ -5,6 +5,7 @@ import FounderQuote from "@/components/FounderQuote";
 import ClaimLabel from "@/components/ClaimLabel";
 import VideoFigure from "@/components/VideoFigure";
 import PhotoGallery from "@/components/PhotoGallery";
+import ImageFigure from "@/components/ImageFigure";
 import ChapterEndCTA from "@/components/ChapterEndCTA";
 
 export const metadata: Metadata = {
@@ -270,6 +271,27 @@ export default function IntiraPage() {
           mechanical infrastructure capable of keeping the computing
           environment alive.
         </p>
+
+        <ImageFigure
+          src="/images/charles-rallo-intira-badges.jpg"
+          alt="Charles A. Rallo name tags and Intira contractor badge on mesh: Rallo Co. nameplate, Harvey's Casino Hotel badge, Intira Contractor Escort Required ID, and partial Build St. Louis sticker"
+          width={450}
+          height={600}
+          maxWidth="max-w-md"
+          caption={
+            <>
+              Charles A. Rallo / Rallo Co. identification artifacts: a black
+              Rallo Co. nameplate, a Harvey’s Casino Hotel badge for Charlie A.
+              Rallo, an Intira contractor badge marked “Contractor — Escort
+              Required,” and a partial Build St. Louis 200… sticker—physical
+              traces of the construction partnership that helped turn Intira’s
+              data-center requirements into buildings.
+            </>
+          }
+          credit="Founder-supplied photograph"
+          claim="corroborated-recollection"
+        />
+
         <p>The facility had to behave more like a machine than an office.</p>
         <p>Every design decision produced another question.</p>
         <ul>

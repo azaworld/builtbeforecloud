@@ -87,6 +87,24 @@ export default function WhackolandPage() {
           credit="Built Before Cloud illustration"
         />
 
+        <ImageFigure
+          src="/images/whacko-cracko-brothers-shirt.jpg"
+          alt="Framed white baseball-style t-shirt with red raglan sleeves reading The Whacko-Cracko Brothers, with twin red cartoon figures flanking a light-blue Gemini symbol"
+          width={720}
+          height={537}
+          maxWidth="max-w-xl"
+          caption={
+            <>
+              A framed Whacko-Cracko Brothers baseball-style shirt—white body,
+              red raglan sleeves—with twin red cartoon figures flanking a
+              light-blue Gemini / II mark, preserved in a dark wooden shadow
+              box. Founder-supplied artifact of the twins’ early handle.
+            </>
+          }
+          credit="Founder-supplied artifact"
+          claim="corroborated-recollection"
+        />
+
         <h2>Whackoland BBS</h2>
         <p className="font-headline text-lg font-semibold text-archive-paper">
           Before Websites, You Dialed the Computer Itself
