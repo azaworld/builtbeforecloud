@@ -127,6 +127,24 @@ export default function IntiraPage() {
           remains an open archival question.
         </p>
 
+        <ImageFigure
+          src="/images/intira/intira-logo.png"
+          alt="INTIRA logo with red swoosh mark and italic INTIRA wordmark"
+          width={1024}
+          height={426}
+          frame="light"
+          maxWidth="max-w-md"
+          caption={
+            <>
+              The INTIRA wordmark—red swoosh and italic black lettering—the
+              brand that replaced Digital Broadcast Network as the company
+              scaled NetSourcing.
+            </>
+          }
+          credit="Founder-supplied brand artifact"
+          claim="corroborated-recollection"
+        />
+
         <h2>Tim, Rich and Mark</h2>
         <p className="font-headline text-lg font-semibold text-archive-paper">
           A Network Vision Needed a Server Vision
@@ -335,6 +353,70 @@ export default function IntiraPage() {
               height: 539,
               caption:
                 "St. Louis Business Journal, Technology and Telecommunications special section, May 11–17, 1998 — “Savvis founder launches digital network.” The 28-year-old co-founder of Savvis raised more than $36 million from investors plus $24 million in equipment commitments (Ascend Communications), took 21,000 square feet at Charter Commons in west St. Louis County, and told the Journal: “We’ve designed this as a $100 million (asset) company from the start.”",
+            },
+          ]}
+        />
+
+        <PhotoGallery
+          title="DBN / Intira — First Enterprise Data Center, 1997"
+          credit="Founder-supplied photographs · Digital Broadcast Network / Intira · St. Louis"
+          claim="corroborated-recollection"
+          photos={[
+            {
+              src: "/images/intira/dbn-intira-first-data-center-1997.jpg",
+              alt: "Glass-walled conference room looking into the 1997 DBN/Intira St. Louis enterprise data center",
+              width: 1024,
+              height: 682,
+              caption:
+                "DBN aka Intira First Enterprise Class Data Center for Netsourcing (now called cloud computing) 1997 — St. Louis. Conference room view through glass into the server floor.",
+            },
+            {
+              src: "/images/intira/dbn-intira-server-racks.jpg",
+              alt: "Rows of black open-frame server racks on a raised floor in the 1997 St. Louis data center",
+              width: 300,
+              height: 200,
+              caption:
+                "Server rack rows in the 1997 St. Louis DBN/Intira facility—open black frames on a raised access floor as the first enterprise-class NetSourcing data center took shape.",
+            },
+            {
+              src: "/images/intira/dbn-intira-powerware-ups.jpg",
+              alt: "Row of large white PowerWare UPS cabinets in the DBN/Intira data center",
+              width: 300,
+              height: 200,
+              caption:
+                "PowerWare UPS cabinets—uninterruptible power infrastructure for the 1997 St. Louis DBN/Intira NetSourcing data center.",
+            },
+            {
+              src: "/images/intira/dbn-intira-kidde-fire-suppression.jpg",
+              alt: "Two red Kidde fire-suppression cylinders with blue discharge hoses",
+              width: 300,
+              height: 200,
+              caption:
+                "Kidde fire-suppression cylinders protecting the 1997 St. Louis DBN/Intira enterprise data center.",
+            },
+            {
+              src: "/images/intira/dbn-intira-noc.jpg",
+              alt: "Network operations center with curved desks facing a large projected video wall",
+              width: 300,
+              height: 200,
+              caption:
+                "NOC / operations center—desks and monitors facing a projected video wall at the 1997 St. Louis DBN/Intira facility.",
+            },
+            {
+              src: "/images/intira/dbn-intira-equipment-staging.jpg",
+              alt: "Stacks of HP and Compaq shipping boxes staged on a raised data-center floor",
+              width: 300,
+              height: 200,
+              caption:
+                "Equipment staging—HP and Compaq shipping boxes stacked on the raised floor as servers arrived for the first NetSourcing data center.",
+            },
+            {
+              src: "/images/intira/tim-roberts-data-center.jpg",
+              alt: "Tim Roberts in a light blue shirt gesturing between equipment cabinets in the data center",
+              width: 300,
+              height: 200,
+              caption:
+                "Tim Roberts on the floor of the 1997 St. Louis DBN/Intira data center, gesturing between cabinets as the NetSourcing facility came online.",
             },
           ]}
         />
