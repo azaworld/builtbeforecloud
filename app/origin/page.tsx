@@ -210,6 +210,31 @@ export default function OriginPage() {
           credit="Family archive"
           claim="family-record"
         />
+
+        <PhotoGallery
+          title="The Ford Years"
+          credit="Family archive · founder-supplied photographs"
+          claim="corroborated-recollection"
+          photos={[
+            {
+              src: "/images/ford-lotus-gt40-studio.jpg",
+              alt: "Studio portrait with a Lotus Powered by Ford Indy car numbered 82 and a Ford GT40 numbered 1",
+              width: 417,
+              height: 584,
+              caption:
+                "Ford’s racing heritage in one frame: a Lotus “Powered by Ford” open-wheel car (#82) beside a Ford GT40 (#1)—the motorsports world Monty Roberts worked inside as a Ford and Lincoln-Mercury public-relations executive.",
+            },
+            {
+              src: "/images/ford-gt40-lemans-pits.jpg",
+              alt: "Ford GT40 and Mark IV race cars lined up in the pit lane at Le Mans, with FORD pit signs and Goodyear, Firestone and Autolite sponsor boards",
+              width: 590,
+              height: 455,
+              caption:
+                "Ford GT40s and Mark IVs lined up in the Le Mans pit lane—the era when Ford proved engineering on the world stage, and when brand storytelling, press kits and racing programs had to move as one system.",
+            },
+          ]}
+        />
+
         <p>
           My father worked in an era when automobile manufacturers used racing
           to demonstrate engineering, build excitement and make brands feel
@@ -312,6 +337,27 @@ export default function OriginPage() {
           Anheuser-Busch relationships involving people such as Paul Newman
           and Mario Andretti. (Motorsport.com)
         </p>
+
+        <ImageFigure
+          src="/images/monty-sunday-chatterbox-newman.jpg"
+          alt="Sunday Chatterbox newspaper column by Margie Schlachter with a photograph captioned Paul Newman look alike attracted a lot of attention, featuring William (Monty) Munro Roberts III"
+          width={701}
+          height={1024}
+          frame="light"
+          caption={
+            <>
+              “Sunday Chatterbox” by Margie Schlachter — covering the
+              Firecracker 400 social scene at Daytona’s Indigo party. The
+              photograph is captioned “PAUL NEWMAN LOOK ALIKE ATTRACTED A LOT
+              OF ATTENTION.” The look-alike at center is William (Monty) Munro
+              Roberts III; the column notes the real Paul Newman was not there
+              that year.
+            </>
+          }
+          credit="Sunday Chatterbox · Margie Schlachter · family archive"
+          claim="contemporary-reporting"
+        />
+
         <p>
           For a child, a major speedway is not an organizational chart or a
           capital expenditure.
