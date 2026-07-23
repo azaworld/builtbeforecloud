@@ -338,6 +338,30 @@ export default function OriginPage() {
           and Mario Andretti. (Motorsport.com)
         </p>
 
+        <PhotoGallery
+          title="Ontario Motor Speedway — The Family Archive"
+          credit="Family archive · 1972 California 500 race program"
+          claim="corroborated-recollection"
+          photos={[
+            {
+              src: "/images/oms-1972-california-500-program-p8.jpg",
+              alt: "Ontario Motor Speedway, Inc. race program page 8 from the 1972 California 500, with portraits of John R. Cooper, Monty Roberts as Executive Vice President Marketing, and Dallas Gardner",
+              width: 1100,
+              height: 1430,
+              caption:
+                "Ontario Motor Speedway, Inc. — page 8 of the 1972 California 500 race program. Portraits name John R. Cooper (President), Monty Roberts (Executive Vice President, Marketing), and Dallas Gardner (EVP Finance), with the OMS staff directory and program credits. Contemporary print evidence of Monty’s operating role at the speedway.",
+            },
+            {
+              src: "/images/monty-twins-ontario-motor-speedway.jpg",
+              alt: "Monty Roberts holding hands with twin toddler boys on the grass at Ontario Motor Speedway, with the Ontario Motor Speedway scoring pylon, timer 7:32.66, and Marlboro branding behind them",
+              width: 722,
+              height: 1024,
+              caption:
+                "Monty Roberts with his twin boys on the infield grass at Ontario Motor Speedway — the OMS scoring pylon behind them reading “Ontario Motor Speedway,” timer 7:32.66, and Marlboro branding. A family frame from the years when the speedway was not only a workplace, but a place the children could stand inside.",
+            },
+          ]}
+        />
+
         <ImageFigure
           src="/images/monty-sunday-chatterbox-newman.jpg"
           alt="Sunday Chatterbox newspaper column by Margie Schlachter with a photograph captioned Paul Newman look alike attracted a lot of attention, featuring William (Monty) Munro Roberts III"
@@ -466,6 +490,26 @@ export default function OriginPage() {
         </FounderQuote>
 
         <ImageFigure
+          src="/images/busch-clash-commemorative-poster.jpg"
+          alt="Commemorative poster titled William (Monty) Munro Roberts III / Busch Clash Racing, with a group photo of NASCAR drivers in Busch jackets including Dale Earnhardt, a driver list, Busch Beer logo, and legacy notes on the Busch Clash and Bud Shootout"
+          width={526}
+          height={789}
+          frame="light"
+          caption={
+            <>
+              “William (Monty) Munro Roberts III / Busch Clash Racing” — a
+              commemorative poster marking Monty’s role, as Busch Beer Marketing
+              Director, in creating the Busch Clash at Daytona. The group photo
+              shows Winston Cup drivers in Busch jackets and caps (Dale
+              Earnhardt and others); the copy tracks the Clash’s evolution into
+              the Bud Shootout and lists drivers tied to the era.
+            </>
+          }
+          credit="Family archive"
+          claim="corroborated-recollection"
+        />
+
+        <ImageFigure
           src="/images/monty-hoyt-axton.jpg"
           alt="Hoyt Axton and William (Monty) Munro Roberts III standing together at a racetrack"
           width={1024}
@@ -519,6 +563,14 @@ export default function OriginPage() {
               height: 815,
               caption:
                 "A family snapshot from the Busch years — Monty in a Busch crew shirt at an outdoor event.",
+            },
+            {
+              src: "/images/daytona-1979-granatelli-monty-roberts.jpg",
+              alt: "Group photo at Daytona Beach in 1979: Andy Granatelli and wife, Lora Lee Roberts, Monty Roberts of Busch Beer, and Helene Robertson, with a Marlboro backdrop",
+              width: 1024,
+              height: 768,
+              caption:
+                "Daytona Beach, Florida — 1979. Left to right: Andy Granatelli (CEO, STP Oil) and his wife; Lora Lee Roberts; Monty Roberts (Busch Beer); Helene Robertson (A&B Daytona Distributor CEO). Captioned family archive print against a Marlboro stage backdrop — the social circuit around Daytona when Monty was building Busch’s motorsports presence.",
             },
           ]}
         />
