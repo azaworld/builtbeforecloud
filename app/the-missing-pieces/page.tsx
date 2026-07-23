@@ -459,6 +459,28 @@ export default function MissingPiecesPage() {
           ]}
         />
 
+        <h2>CEO Savvy</h2>
+        <p>
+          <ClaimLabel type="founder-recollection" />
+        </p>
+        <p>
+          CEO Savvy was another of my ventures from this period—an online media
+          and community effort positioned as “The Voice of CEO’s.” The
+          surviving record is limited, so it belongs here as a modest entry in
+          the broader pattern of building distribution and community platforms,
+          without specific dates, figures or outcomes attached.
+        </p>
+        <ImageFigure
+          src="/images/ceosavvy-logo.jpg"
+          alt="CEO Savvy logo — a blue globe with an orbit swoosh beside the ceosavvy wordmark and the tagline The Voice of CEO's"
+          width={604}
+          height={248}
+          frame="light"
+          maxWidth="max-w-sm"
+          caption="CEO Savvy — “The Voice of CEO’s”"
+          claim="corroborated-recollection"
+        />
+
         <h2>Savtira</h2>
         <p>
           Savtira expanded the vision beyond games into broader cloud
