@@ -117,7 +117,7 @@ export default function HomePage() {
             From 300 Baud to the Intelligent Enterprise
           </p>
 
-          <h1 className="mt-10 text-center font-headline text-[clamp(2.5rem,6.2vw,4.9rem)] font-bold leading-[1.02] tracking-[-0.025em]">
+          <h1 className="mt-10 text-center font-headline text-[clamp(2rem,8vw,2.75rem)] font-bold leading-[1.06] tracking-[-0.025em] sm:text-[clamp(2.5rem,6.2vw,4.9rem)] sm:leading-[1.02]">
             Before the Web.
             <br />
             Before Streaming Worked.

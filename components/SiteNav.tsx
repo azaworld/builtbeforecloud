@@ -40,6 +40,15 @@ export default function SiteNav() {
     setOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#081524]/85 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.6)] backdrop-blur-2xl">
       {/* Reading progress */}
@@ -49,16 +58,16 @@ export default function SiteNav() {
         aria-hidden
       />
 
-      <div className="mx-auto flex max-w-[92rem] items-center justify-between gap-6 px-5 py-4">
-        <Link href="/" className="group flex shrink-0 items-center gap-3">
-          <span className="grid h-10 w-10 place-items-center rounded-xl border border-electric-cyan/25 bg-electric-cyan/[0.07] transition-all duration-300 group-hover:border-electric-cyan/60 group-hover:shadow-[0_0_20px_rgba(64,217,232,0.35)]">
-            <Logo className="h-7 w-7" />
+      <div className="mx-auto flex max-w-[92rem] items-center justify-between gap-3 px-4 py-4 sm:gap-6 sm:px-5">
+        <Link href="/" className="group flex min-w-0 items-center gap-2.5 sm:gap-3">
+          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl border border-electric-cyan/25 bg-electric-cyan/[0.07] transition-all duration-300 group-hover:border-electric-cyan/60 group-hover:shadow-[0_0_20px_rgba(64,217,232,0.35)] sm:h-10 sm:w-10">
+            <Logo className="h-6 w-6 sm:h-7 sm:w-7" />
           </span>
-          <span className="flex flex-col leading-none">
-            <span className="font-headline text-[15px] font-bold uppercase tracking-[0.22em] text-archive-paper">
+          <span className="flex min-w-0 flex-col leading-none">
+            <span className="truncate font-headline text-[12.5px] font-bold uppercase tracking-[0.12em] text-archive-paper sm:text-[15px] sm:tracking-[0.22em]">
               Built Before Cloud
             </span>
-            <span className="mt-1.5 font-mono text-[9px] uppercase tracking-[0.3em] text-electric-cyan/80">
+            <span className="mt-1.5 truncate font-mono text-[8.5px] uppercase tracking-[0.24em] text-electric-cyan/80 sm:text-[9px] sm:tracking-[0.3em]">
               Est. 300 Baud · St. Louis
             </span>
           </span>
@@ -91,7 +100,7 @@ export default function SiteNav() {
           type="button"
           aria-label="Toggle navigation"
           aria-expanded={open}
-          className="flex items-center gap-2.5 rounded-full border border-electric-cyan/30 bg-electric-cyan/[0.07] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-electric-cyan transition-colors hover:bg-electric-cyan/15 xl:hidden"
+          className="flex shrink-0 items-center gap-2.5 rounded-full border border-electric-cyan/30 bg-electric-cyan/[0.07] px-3.5 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-electric-cyan transition-colors hover:bg-electric-cyan/15 sm:px-4 xl:hidden"
           onClick={() => setOpen((v) => !v)}
         >
           <span className="flex flex-col gap-[4px]">
@@ -105,7 +114,7 @@ export default function SiteNav() {
               className={`block h-[1.5px] w-4 bg-electric-cyan transition-transform duration-300 ${open ? "-translate-y-[5.5px] -rotate-45" : ""}`}
             />
           </span>
-          {open ? "Close" : "Menu"}
+          <span className="hidden min-[360px]:inline">{open ? "Close" : "Menu"}</span>
         </button>
       </div>
 
