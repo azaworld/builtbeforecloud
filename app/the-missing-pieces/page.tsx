@@ -5,6 +5,7 @@ import Prose from "@/components/Prose";
 import FounderQuote from "@/components/FounderQuote";
 import ClaimLabel from "@/components/ClaimLabel";
 import VideoFigure from "@/components/VideoFigure";
+import PhotoGallery from "@/components/PhotoGallery";
 import ChapterEndCTA from "@/components/ChapterEndCTA";
 
 export const metadata: Metadata = {
@@ -161,6 +162,128 @@ export default function MissingPiecesPage() {
           thing as operational readiness. Hype can create opportunity, but it
           can also multiply every weakness.”
         </FounderQuote>
+
+        <PhotoGallery
+          title="Phantom at E3 — The Founder Archive"
+          credit="Founder-supplied photographs · Infinium Labs / Phantom Entertainment"
+          claim="corroborated-recollection"
+          photos={[
+            {
+              src: "/images/phantom/phantom-team.jpg",
+              alt: "Phantom Entertainment leadership team beside the Phantom console prototype",
+              width: 1024,
+              height: 768,
+              caption:
+                "The Phantom Entertainment team — left to right: Royal Obrian; Tim Roberts, CEO of Phantom Entertainment; Kevin Bachus, President and COO (co-founder of the original Microsoft Xbox effort); and Rob Shambro, Sales — with the Phantom console prototype.",
+            },
+            {
+              src: "/images/phantom/phantom-booth-front.jpg",
+              alt: "The Phantom Gaming Service booth at E3",
+              width: 500,
+              height: 381,
+              caption:
+                "The Phantom Gaming Service booth at E3 — 'Any game. Any time.'",
+            },
+            {
+              src: "/images/phantom/phantom-billboard.jpg",
+              alt: "Any Game Any Time billboard outside the E3 convention center",
+              width: 590,
+              height: 443,
+              caption:
+                "The 'Any Game, Any Time' billboard over the E3 convention-center entrance, South Hall Booth #746.",
+            },
+            {
+              src: "/images/phantom/phantom-net-visor.jpg",
+              alt: "Phantom.net branding on the console industrial design",
+              width: 590,
+              height: 228,
+              caption:
+                "Phantom.net — the service brand rendered into the console's industrial design.",
+            },
+            {
+              src: "/images/phantom/phantom-indy-car.jpg",
+              alt: "Indy car sponsored by Phantom Gaming Service on display at E3",
+              width: 604,
+              height: 453,
+              caption:
+                "The Phantom-liveried Indy car displayed outside the show floor.",
+            },
+            {
+              src: "/images/phantom/phantom-crowd-overhead.jpg",
+              alt: "Overhead view of crowds inside the Phantom booth at E3",
+              width: 604,
+              height: 453,
+              caption:
+                "Show-floor crowds moving through the Phantom booth at E3.",
+            },
+            {
+              src: "/images/phantom/phantom-booth-blue.jpg",
+              alt: "The two-story Phantom booth structure in blue lighting",
+              width: 500,
+              height: 357,
+              caption:
+                "The two-story booth structure — a small building erected inside the convention hall.",
+            },
+            {
+              src: "/images/phantom/phantom-booth-aerial.jpg",
+              alt: "Aerial view of the Phantom booth meeting area",
+              width: 357,
+              height: 500,
+              caption: "The booth's meeting area, seen from the second level.",
+            },
+            {
+              src: "/images/phantom/phantom-booth-desk.jpg",
+              alt: "Reception desk of the Phantom booth at E3",
+              width: 500,
+              height: 375,
+              caption: "The booth reception desk on the E3 show floor.",
+            },
+            {
+              src: "/images/phantom/phantom-showfloor-crowd.jpg",
+              alt: "Attendees around the Phantom demo stations at E3",
+              width: 500,
+              height: 375,
+              caption: "Attendees around the Phantom demo stations.",
+            },
+            {
+              src: "/images/phantom/phantom-crowd-stairs.jpg",
+              alt: "Crowds filling the Phantom booth seen from the staircase",
+              width: 500,
+              height: 336,
+              caption: "The booth at capacity, seen from the internal staircase.",
+            },
+            {
+              src: "/images/phantom/phantom-staff.jpg",
+              alt: "Phantom booth staff at E3",
+              width: 604,
+              height: 453,
+              caption: "Booth staff during the E3 exhibition.",
+            },
+            {
+              src: "/images/phantom/phantom-demo-session.jpg",
+              alt: "Press and attendees gathered for a Phantom demo session",
+              width: 604,
+              height: 453,
+              caption:
+                "Press and attendees gathered in the booth lounge for a demonstration session.",
+            },
+            {
+              src: "/images/phantom/phantom-booth-lounge.jpg",
+              alt: "Lounge seating and demo screen inside the Phantom booth",
+              width: 500,
+              height: 357,
+              caption: "Lounge seating and a live demo screen inside the booth.",
+            },
+            {
+              src: "/images/phantom/phantom-vip-demo-room.jpg",
+              alt: "VIP Demo Room 1 inside the Phantom booth",
+              width: 500,
+              height: 357,
+              caption:
+                "VIP Demo Room 1 — private demonstration space for press and partners.",
+            },
+          ]}
+        />
 
         <p>Phantom contributed lessons in:</p>
         <ul>

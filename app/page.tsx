@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CTAButton from "@/components/CTAButton";
 import TerminalBlock from "@/components/TerminalBlock";
+import JourneyExplorer from "@/components/JourneyExplorer";
 
 export const metadata: Metadata = {
   title: "Tim Roberts: From Whackoland and Savvis to Intira and Platformz",
@@ -344,6 +345,26 @@ export default function HomePage() {
               one simple, intelligent operating system.
             </span>
           </p>
+        </div>
+      </section>
+
+      {/* ============ INTERACTIVE JOURNEY ============ */}
+      <section className="signal-grid relative overflow-hidden border-b border-white/[0.06]">
+        <div className="mx-auto max-w-[88rem] px-5 py-28">
+          <p className="eyebrow-lined mx-auto flex w-full justify-center font-mono text-[11px] uppercase tracking-[0.35em] text-electric-cyan">
+            Explore the Journey
+          </p>
+          <h2 className="rv mt-8 text-center font-headline text-[clamp(1.9rem,4vw,3rem)] font-bold tracking-[-0.02em]">
+            Fifty Years, <span className="headline-gradient">One Direction.</span>
+          </h2>
+          <p className="rv mx-auto mt-5 max-w-2xl text-center leading-relaxed text-technical-gray">
+            Click through the eras of Timothy Munro Roberts&rsquo;s life and
+            watch the same problem—and the same answer—repeat at larger and
+            larger scale.
+          </p>
+          <div className="rv mt-14">
+            <JourneyExplorer />
+          </div>
         </div>
       </section>
 
