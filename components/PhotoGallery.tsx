@@ -75,8 +75,12 @@ export default function PhotoGallery({
         </div>
       )}
 
-      {/* Grid */}
-      <div className="grid grid-cols-2 gap-2 p-2 sm:grid-cols-3 sm:gap-3 sm:p-3">
+      {/* Grid — feature the first photo only when the set is large enough */}
+      <div
+        className={`grid gap-2 p-2 sm:gap-3 sm:p-3 ${
+          photos.length >= 5 ? "grid-cols-2 sm:grid-cols-3" : "grid-cols-1 sm:grid-cols-2"
+        }`}
+      >
         {photos.map((p, i) => (
           <button
             key={p.src}
@@ -86,7 +90,9 @@ export default function PhotoGallery({
               setActive(i);
             }}
             className={`group relative overflow-hidden rounded-[4px] bg-black/40 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-electric-cyan ${
-              i === 0 ? "col-span-2 row-span-2 sm:col-span-2 sm:row-span-2" : ""
+              photos.length >= 5 && i === 0
+                ? "col-span-2 row-span-2 sm:col-span-2 sm:row-span-2"
+                : ""
             }`}
             aria-label={`Open photo ${i + 1} of ${photos.length}: ${p.alt}`}
           >
@@ -95,8 +101,14 @@ export default function PhotoGallery({
               alt={p.alt}
               width={p.width}
               height={p.height}
-              sizes={i === 0 ? "(min-width: 1024px) 480px, 66vw" : "(min-width: 1024px) 240px, 33vw"}
-              className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.05]"
+              sizes={
+                photos.length < 5 || i === 0
+                  ? "(min-width: 1024px) 480px, 66vw"
+                  : "(min-width: 1024px) 240px, 33vw"
+              }
+              className={`w-full transition-transform duration-500 ease-out group-hover:scale-[1.05] ${
+                photos.length >= 5 ? "h-full object-cover" : "h-auto"
+              }`}
             />
             {/* Hover veil */}
             <span className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />

@@ -399,6 +399,30 @@ export default function MissingPiecesPage() {
           They become stronger when coordinated through a common platform.
         </p>
 
+        <PhotoGallery
+          title="StationDigital — The Founder Archive"
+          credit="Founder-supplied photographs · StationDigital Corporation"
+          claim="corroborated-recollection"
+          photos={[
+            {
+              src: "/images/stationdigital/stationdigital-rolling-stone.jpg",
+              alt: "Timothy Munro Roberts and Andrew Gladney at Rolling Stone headquarters in Manhattan",
+              width: 590,
+              height: 443,
+              caption:
+                "Timothy Munro Roberts and Andrew Gladney (heir to the 7up fortune) at Rolling Stone headquarters in Manhattan for a StationDigital interview—the same partnership that started Savvis, reunited a media generation later.",
+            },
+            {
+              src: "/images/stationdigital/stationdigital-nasdaq-times-square.jpg",
+              alt: "StationDigital on the NASDAQ tower in Times Square",
+              width: 480,
+              height: 590,
+              caption:
+                "StationDigital.com on the NASDAQ tower in Times Square—the streaming-media venture announced to the public markets.",
+            },
+          ]}
+        />
+
         <h2>HashingSpace and Emerging Infrastructure</h2>
         <p>
           Blockchain infrastructure introduced another version of the same
