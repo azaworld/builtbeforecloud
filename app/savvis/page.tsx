@@ -4,6 +4,7 @@ import Prose from "@/components/Prose";
 import FounderQuote from "@/components/FounderQuote";
 import ClaimLabel from "@/components/ClaimLabel";
 import ImageFigure from "@/components/ImageFigure";
+import PhotoGallery from "@/components/PhotoGallery";
 import ChapterEndCTA from "@/components/ChapterEndCTA";
 
 export const metadata: Metadata = {
@@ -606,6 +607,57 @@ export default function SavvisPage() {
           over many years. My chapter was the beginning. I am proud of the
           foundation without claiming ownership of everything that followed.”
         </FounderQuote>
+
+        <h2>Naming Rights, Headquarters and St. Louis Legacy</h2>
+        <p>
+          <ClaimLabel type="corroborated-recollection" />
+        </p>
+        <p>
+          Beyond the backbone and the IPO, Savvis left a physical imprint on
+          St. Louis: arena naming rights, a corporate campus, a street named
+          for the company, and a headquarters story that ran through Brooks
+          Fiber, WorldCom and a Broadband Investment Group lease.
+        </p>
+
+        <PhotoGallery
+          title="Savvis — The Founder Archive"
+          credit="Founder-supplied photographs · Savvis / St. Louis corporate archive"
+          claim="corroborated-recollection"
+          photos={[
+            {
+              src: "/images/savvis-center-exterior.jpg",
+              alt: "Exterior of Savvis Center in St. Louis with LED marquee, Boeing logo, SAVVIS CENTER signage, American flags and parked cars",
+              width: 1024,
+              height: 507,
+              caption:
+                "Savvis Center, St. Louis—the downtown arena that carried the company name. The LED marquee reads “Savvis Center / Stadium St. Louis / Home of the Blues Hockey Team,” with Boeing sponsorship and SAVVIS CENTER signage above the glass facade and American flags at street level.",
+            },
+            {
+              src: "/images/savvis-lobby.jpg",
+              alt: "Savvis lobby and reception desk with large SAVVIS wall letters and red square starburst logo beside glass entrance doors",
+              width: 604,
+              height: 453,
+              caption:
+                "Savvis lobby and reception: oversized metallic SAVVIS letters and the red-square starburst mark dominate the stone wall behind the desk, with glass entrance doors opening to the parking court—everyday corporate branding for a network company that had become a St. Louis institution.",
+            },
+            {
+              src: "/images/savvis-world-headquarters.jpg",
+              alt: "Composite of front and rear views of Savvis World Headquarters, the former Brooks Fiber building in St. Louis",
+              width: 1024,
+              height: 768,
+              caption:
+                "Savvis World Headquarters—front and rear views of the former Brooks Fiber building in St. Louis, sold to WorldCom before Savvis acquired it after Tim Roberts, on behalf of BIG (Broadband Investment Group), secured the building on a 99-year lease with a $1 buyout option.",
+            },
+            {
+              src: "/images/savvis-pkwy-sign.jpg",
+              alt: "Outdoor SAVVIS monument sign with SAVVIS PKWY street sign and autumn trees in the background",
+              width: 604,
+              height: 453,
+              caption:
+                "Savvis Pkwy monument sign: the white starburst-on-square mark and SAVVIS wordmark on a brick base, with the municipal street sign “SAVVIS PKWY” visible behind autumn trees—corporate presence written into the suburb’s map.",
+            },
+          ]}
+        />
 
         <p>Savvis began with a network-performance thesis.</p>
         <p>
