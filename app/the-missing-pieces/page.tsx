@@ -166,6 +166,16 @@ export default function MissingPiecesPage() {
           He built his own technical career and contributed to communications
           and network businesses including Wanforce and Phoenix Networks.
         </p>
+        <ImageFigure
+          src="/images/phoenix-networks-logo.jpg"
+          alt="Phoenix Networks logo — overlapping orange and red circles beside the words PHOENIX NETWORKS"
+          width={900}
+          height={450}
+          frame="light"
+          maxWidth="max-w-sm"
+          caption="Phoenix Networks"
+          claim="corroborated-recollection"
+        />
         <p>Our lives moved together, apart and together again.</p>
         <p>We were twins. Competitors. Collaborators.</p>
         <p>
@@ -183,6 +193,26 @@ export default function MissingPiecesPage() {
         </p>
 
         <h2>Infinium Labs and Phantom</h2>
+        <ImageFigure
+          src="/images/infinium-labs-logo.jpg"
+          alt="Infinium Labs logo — silver 'INFINIUM LABS' wordmark with a metallic sphere"
+          width={150}
+          height={43}
+          frame="light"
+          maxWidth="max-w-[220px]"
+          caption="Infinium Labs"
+          claim="corroborated-recollection"
+        />
+        <ImageFigure
+          src="/images/phantom-entertainment-logo.jpg"
+          alt="Phantom Entertainment logo — glowing blue 'PHANTOM ENTERTAINMENT' wordmark"
+          width={316}
+          height={75}
+          frame="light"
+          maxWidth="max-w-xs"
+          caption="Phantom Entertainment"
+          claim="corroborated-recollection"
+        />
         <p>
           Phantom explored the delivery of digital games into the living room.
         </p>
@@ -361,6 +391,16 @@ export default function MissingPiecesPage() {
 
         <h2>GameStreamer</h2>
         <p>GameStreamer focused on white-label digital distribution.</p>
+        <ImageFigure
+          src="/images/gamestreamer-logo.jpg"
+          alt="GameStreamer logo — red 'GS' badge above the GameStreamer wordmark and the tagline Instantaneous Gaming"
+          width={768}
+          height={512}
+          frame="light"
+          maxWidth="max-w-sm"
+          caption="GameStreamer — Instantaneous Gaming"
+          claim="corroborated-recollection"
+        />
         <p>
           One reusable infrastructure could power multiple branded
           storefronts, partners, catalogs and customer experiences.
