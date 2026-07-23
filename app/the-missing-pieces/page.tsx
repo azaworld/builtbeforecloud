@@ -452,6 +452,54 @@ export default function MissingPiecesPage() {
           </li>
         </ul>
 
+        <PhotoGallery
+          title="Savtira in Ybor City — The Founder Archive"
+          credit="Founder-supplied photograph · Savtira, Ybor City (Tampa)"
+          claim="corroborated-recollection"
+          photos={[
+            {
+              src: "/images/savtira-ybor-city-guavaween.jpg",
+              alt: "Joe Heinzen, Michael Avina and Tim Roberts in a vintage costume shop near the Savtira headquarters in Ybor City, preparing for Guavaween",
+              width: 1024,
+              height: 768,
+              caption:
+                "Left to right: Joe Heinzen, Michael Avina and Tim Roberts with Savtira in Ybor City—the headquarters neighborhood—outfitted in costume-shop finery (Tim in a playing-card jacket and cowboy hat) while preparing for Guavaween, Ybor City's Halloween street festival.",
+            },
+          ]}
+        />
+
+        <h3>Earlier Recognition: The Savvis and Intira Years</h3>
+        <p>
+          Two framed honors from around the turn of the millennium predate
+          Savtira by more than a decade—they belong to the Savvis and Intira
+          era, when Tim Roberts was in his late twenties. They are collected
+          here as part of the founder archive, accurately dated to their own
+          time rather than the Savtira years.
+        </p>
+        <PhotoGallery
+          title="Recognition — 30 Under 30 &amp; 40 Under 40 (January 2000)"
+          credit="FastForward Magazine and St. Louis Business Journal · founder-supplied clippings"
+          claim="contemporary-reporting"
+          photos={[
+            {
+              src: "/images/tim-roberts-fastforward-30-under-30.jpg",
+              alt: "FastForward magazine 'The 30 Under 30 Issue,' January 2000, with a framed photo of Tim Roberts and a '30 Under 30 · Tim Roberts · Fast Forward Magazine · January 2000' label",
+              width: 604,
+              height: 453,
+              caption:
+                "FastForward magazine's “The 30 Under 30 Issue” (January 2000). The framed display names Tim Roberts among the honorees—“30 Under 30 · Tim Roberts · Fast Forward Magazine · January 2000.” A Savvis/Intira-era recognition, years before Savtira.",
+            },
+            {
+              src: "/images/tim-roberts-40-under-40-business-journal.jpg",
+              alt: "St. Louis Business Journal '40 under forty' framed clipping (January 2000) listing Tim Roberts, 29, among 40 overachievers under 40",
+              width: 604,
+              height: 453,
+              caption:
+                "St. Louis Business Journal's “40 under forty” (January 2000)—“40 overachievers under 40.” The profile at lower right features “Tim Roberts, 29.” Another Savvis/Intira-era honor predating Savtira.",
+            },
+          ]}
+        />
+
         <h2>StationDigital</h2>
         <p>StationDigital expanded the experience into:</p>
         <ul>
