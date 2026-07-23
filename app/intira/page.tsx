@@ -4,6 +4,7 @@ import Prose from "@/components/Prose";
 import FounderQuote from "@/components/FounderQuote";
 import ClaimLabel from "@/components/ClaimLabel";
 import VideoFigure from "@/components/VideoFigure";
+import PhotoGallery from "@/components/PhotoGallery";
 import ChapterEndCTA from "@/components/ChapterEndCTA";
 
 export const metadata: Metadata = {
@@ -291,6 +292,31 @@ export default function IntiraPage() {
         </p>
 
         <h2>Digital Broadcast Network Becomes Intira</h2>
+
+        <PhotoGallery
+          title="1998: The Launch, in Print"
+          credit="St. Louis Post-Dispatch · St. Louis Business Journal · founder-supplied clippings"
+          claim="contemporary-reporting"
+          photos={[
+            {
+              src: "/images/dbn-post-dispatch-1998.jpg",
+              alt: "St. Louis Post-Dispatch article, January 24, 1998: New company offers world of information",
+              width: 393,
+              height: 590,
+              caption:
+                "St. Louis Post-Dispatch, January 24, 1998 — “New company offers world of information.” Data would move 41 times faster than the speediest Net connections. “We started out to build a Ferrari for the information highway,” said Timothy M. Roberts, who co-founded Savvis in 1995. “I want to finish what I started.” Digital Broadcast Network launched February 1 with $15–20 million in financing and 12 employees.",
+            },
+            {
+              src: "/images/dbn-business-journal-1998.jpg",
+              alt: "St. Louis Business Journal special section, May 11–17, 1998: Savvis founder launches digital network",
+              width: 590,
+              height: 539,
+              caption:
+                "St. Louis Business Journal, Technology and Telecommunications special section, May 11–17, 1998 — “Savvis founder launches digital network.” The 28-year-old co-founder of Savvis raised more than $36 million from investors plus $24 million in equipment commitments (Ascend Communications), took 21,000 square feet at Charter Commons in west St. Louis County, and told the Journal: “We’ve designed this as a $100 million (asset) company from the start.”",
+            },
+          ]}
+        />
+
         <p>The original name reflected the media-distribution problem.</p>
         <p>Audio and video did not require only a network.</p>
         <p>

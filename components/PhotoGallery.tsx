@@ -70,7 +70,7 @@ export default function PhotoGallery({
             {title}
           </span>
           <span className="hidden font-mono text-[10px] uppercase tracking-[0.18em] text-technical-gray/70 sm:block">
-            {photos.length} photographs · click to open
+            {photos.length} {photos.length === 1 ? "photograph" : "photographs"} · click to open
           </span>
         </div>
       )}

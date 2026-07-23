@@ -4,6 +4,7 @@ import Prose from "@/components/Prose";
 import FounderQuote from "@/components/FounderQuote";
 import ClaimLabel from "@/components/ClaimLabel";
 import ImageFigure from "@/components/ImageFigure";
+import PhotoGallery from "@/components/PhotoGallery";
 import ChapterEndCTA from "@/components/ChapterEndCTA";
 
 export const metadata: Metadata = {
@@ -75,6 +76,34 @@ export default function OriginPage() {
             They were entirely different people with unrelated careers.
           </p>
         </div>
+
+        <p>
+          The drive did not begin with my father. It was already in the family
+          name.
+        </p>
+
+        <ImageFigure
+          src="/images/munro-roberts-i-1927.jpg"
+          alt="The St. Louis Star, June 15, 1927: Employe in Star Mailing Room Becomes a Lawyer — portrait of William Munro Roberts I"
+          width={526}
+          height={701}
+          frame="light"
+          maxWidth="max-w-xl"
+          caption={
+            <>
+              <em>The St. Louis Star</em>, June 15, 1927 — “Employe in Star
+              Mailing Room Becomes a Lawyer.” William Munro Roberts I, Tim’s
+              great-grandfather: orphaned at eight, working in a shoe factory
+              at eleven, out of school at fourteen to work as a bundle boy —
+              then sixteen years in newspaper mail rooms, president of the St.
+              Louis Mailers’ Union, night classes at the City College of Law
+              three nights a week, and the state bar examination passed. The
+              family pattern—outworking the circumstances—starts here.
+            </>
+          }
+          credit="Family archive · The St. Louis Star"
+          claim="family-record"
+        />
 
         <p>
           To the companies he worked for, my father was an executive trusted
@@ -389,6 +418,64 @@ export default function OriginPage() {
           document to understand the Busch Clash. Put the fastest drivers
           together and let them race.”
         </FounderQuote>
+
+        <ImageFigure
+          src="/images/monty-hoyt-axton.jpg"
+          alt="Hoyt Axton and William (Monty) Munro Roberts III standing together at a racetrack"
+          width={1024}
+          height={685}
+          frame="light"
+          caption={
+            <>
+              Hoyt Axton (actor and country singer, left) with William (Monty)
+              Munro Roberts III (right), after Monty hired Axton to be the
+              voice of Busch beer’s “Head for the Mountains of Busch, Beer”
+              commercial.
+            </>
+          }
+          credit="Family archive"
+          claim="family-record"
+        />
+
+        <PhotoGallery
+          title="The Busch Years"
+          credit="Family archive"
+          claim="family-record"
+          photos={[
+            {
+              src: "/images/busch-balloon-poster.jpg",
+              alt: "Busch beer hot air balloon poster for the U.S. National Hot Air Balloon Championship, Indianola, Iowa, August 3–11, 1979",
+              width: 766,
+              height: 1024,
+              caption:
+                "The Busch beer balloon on the poster for the U.S. National Hot Air Balloon Championship — Indianola, Iowa, August 3–11, 1979. Putting the brand in the sky, decades before anyone talked about ‘the cloud.’",
+            },
+            {
+              src: "/images/busch-blimp.jpg",
+              alt: "The Busch beer blimp flying over a field, with the Head for the Mountains advertisement inset",
+              width: 586,
+              height: 480,
+              caption:
+                "“Head for the mountains.” Monty gave the contract for the first hot-air blimps for Busch to Sid Citter. The blimp program did not succeed—this blimp is now in the Hot Air Balloon Museum.",
+            },
+            {
+              src: "/images/busch-dominics-1980.jpg",
+              alt: "Salute Anheuser-Busch caricature poster from Dominic's, March 1980, listing brand managers including William (Monty) Munro Roberts III for Busch",
+              width: 512,
+              height: 640,
+              caption:
+                "“Salute Anheuser-Busch” — a caricature poster from Dominic’s, March 1980, listing the Anheuser-Busch brands and brand managers of 1980: William (Monty) Munro Roberts III for Busch, alongside the brand managers for Budweiser, Michelob, Natural Light and Bud Light.",
+            },
+            {
+              src: "/images/monty-family-busch-years.jpg",
+              alt: "Monty Roberts in a Busch crew shirt laughing with family at an outdoor event",
+              width: 1024,
+              height: 815,
+              caption:
+                "A family snapshot from the Busch years — Monty in a Busch crew shirt at an outdoor event.",
+            },
+          ]}
+        />
 
         <p>That principle stayed with me.</p>
         <div className="my-8 space-y-4">

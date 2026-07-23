@@ -98,6 +98,22 @@ export default function MissingPiecesPage() {
           until original financing and corporate records are added to the
           archive.
         </p>
+        <PhotoGallery
+          title="BIG in the Press"
+          credit="St. Louis Post-Dispatch · founder-supplied clipping"
+          claim="contemporary-reporting"
+          photos={[
+            {
+              src: "/images/big-worldcom-post-dispatch.jpg",
+              alt: "St. Louis Post-Dispatch clipping: Purchase will allow BIG — WorldCom sells building for $35 million in cash and stock",
+              width: 480,
+              height: 590,
+              caption:
+                "St. Louis Post-Dispatch — “Purchase will allow BIG.” WorldCom took an equity stake in Broadband Investment Group as part of a $35 million deal in which BIG bought the WorldCom building on Highway 40 (Interstate 64) for $37.35 million. “We pulled it off,” said Broadband chairman and chief visionary officer Tim Roberts. “It’s a big deal.” The purchase opened the way for BIG—then 125 employees—to hire 400 more over the following 90 days.",
+            },
+          ]}
+        />
+
         <p>BIG taught me:</p>
         <ul>
           <li>Shared services can accelerate many companies.</li>
